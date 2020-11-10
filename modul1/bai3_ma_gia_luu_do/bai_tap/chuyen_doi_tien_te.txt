@@ -1,0 +1,5 @@
+begin
+     input:USD
+     VN=USD*23000
+     display VN
+end

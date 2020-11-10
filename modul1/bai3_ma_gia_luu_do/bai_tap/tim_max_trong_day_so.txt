@@ -1,0 +1,22 @@
+begin
+    input:N
+    I=0
+    if(I<N)  
+       input:A(I)
+       I=I+1
+    esle
+       begin 
+         max=A(0)
+         I=1
+         if(I<N)
+           if(A(I)>max)
+               max=A(I)
+               I=I+1
+           else
+               I=I+1
+           end if    
+         end if
+        end
+     end if
+     display max
+end
