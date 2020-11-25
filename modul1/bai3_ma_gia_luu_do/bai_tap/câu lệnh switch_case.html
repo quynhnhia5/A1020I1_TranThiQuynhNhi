@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>câu lệnh switch-case</title>
+</head>
+<body>
+        <input type="text" id="value1">
+        <input type="button" ; value="tính số ngày"; onclick="tinh()" >
+        <p id='result'></p>
+    <script>
+        function tinh() {
+            let a = document.getElementById('value1').value;
+            a=parseInt(a);
+            switch(a){
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    document.getElementById('result').innerHTML = '<b>tháng có 31 ngày </b>';
+                    break;
+                 case 2:
+                     document.getElementById('result').innerHTML = '<b>tháng có 28 or 29 ngày </b>';
+                     break;
+                 default:
+                     document.getElementById('result').innerHTML = '<b>tháng có 30 ngày </b>';
+                     break;
+            }
+        }
+    </script>
+</body>
+</html>
