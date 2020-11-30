@@ -1,5 +1,0 @@
-begin
-    input:ton,ly,hoa
-    dtb=(toan+ly+hoa)3
-    display dtb
-end
