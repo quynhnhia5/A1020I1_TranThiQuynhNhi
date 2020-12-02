@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        
+        let f0=1;
+        let f1=1;
+        let fn=1;
+        let s=0;
+        let a=[f0,f1];
+        for( let i=2;i<=18;i++){
+            f0 = f1;
+            f1 = fn;
+            fn = f0 + f1;
+            a[i] = parseInt(prompt("Nhập vào phần tử " + i));
+         }
+         document.write(a+"<br>");
+        for(i=0;i<=a.length;i++)
+            {
+             if(a[i]%5==0){
+                document.write("số đầu tiên chia hết cho 5 la:"+a[i]+"<br>");
+               break;}}
+        for( i=0;i<=a.length-1;i++){
+            s += a[i];
+            }
+         document.write("tổng là:" + s + "<br>");
+
+
+            
+            
+        
+
+        
+          
+        
+    </script>
+</body>
+</html>

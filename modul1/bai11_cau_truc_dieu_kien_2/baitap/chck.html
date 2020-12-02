@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num1=parseInt(prompt("Enter a number: "));//số lượng số nguyên tố
+    let count =0;
+    let num = 2;
+    let ketQua =" ";
+    while (count<num1){
+        let check = true;
+        for (let i=2; i<num; i++){
+            if (num%i===0){
+                check=false;
+                break;
+
+            }
+        }
+        if (check){
+            ketQua += num+ "<br>";
+            count++;
+        }
+        num++;
+    }
+    document.write(ketQua);
+
+</script>
+</body>
+</html>
