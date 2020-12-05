@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n=prompt("nhập bao nhiêu phần tử :");
+        let max;
+        let k;
+        max=parseInt(max);
+        let a=[];
+        for(let i=0;i<n;i++){
+          a[i]= parseInt( prompt("nhập vào phần tử thứ "+i));  
+            }
+        max=a[0];
+        for (let i=0; i < a.length; i++){
+            if (max < a[i]){
+                max = a[i];
+                k=i;
+            }
+            
+        
+        }
+        document.write(a+"<br>");
+        document.write("số lớn nhất là :"+max + "<br>");
+        document.write("số lớn nhất ở vị trí thứ:"+k);
+
+    </script>
+</body>
+</html>

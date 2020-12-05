@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = prompt("nhập bao nhiêu phần tử :");
+    let a = [];
+    let dem=0;
+    for (let i = 0; i < n; i++) {
+        a[i] = parseInt(prompt("nhập vào phần tử thứ " + i));
+    }
+    for( i=0;i<a.length;i++){
+        if(a[i]<0){
+            dem+=1
+        }
+    }
+    document.write(a+"<br>");
+    document.write("có" + dem + "số nguyên âm ");
+</script>
+</body>
+</html>

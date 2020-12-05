@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n=prompt("nhập bao nhiêu phần tử :");
+        let s=0;
+        let dem=0;
+        let a=[];
+        for(let i=0;i<n;i++){
+          a[i]= parseInt( prompt("nhập vào phần tử thứ "+i));  
+            }
+        for(i=0;i<a.length;i++){
+            if(a[i]>=10){
+                s+=a[i];
+                dem+=1
+            }}
+        document.write(a + "<br>");
+        document.write("co" + dem +" phần tử lớn hơn 10"+ "<br>");;
+        document.write("tong cac phan tu lon hon 10:"+s);
+        
+    </script>
+</body>
+</html>

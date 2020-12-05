@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = prompt("nhập bao nhiêu phần tử :");
+    let a = [];
+    for (let i = 0; i < n; i++) {
+        a[i] = parseInt(prompt("nhập vào phần tử thứ " + i));
+    }
+    let v = parseInt(prompt("nhập số nguyên:"));
+    for (let i = 0; i <= a.length; i++) {
+        if (a[i] == v) {
+            document.write("V is in the array");
+        } else {
+            document.write("V is not in the array");
+        }
+    }
+    document.write(+"<br> " + "mảng là" + a);
+</script>
+</body>
+</html>
