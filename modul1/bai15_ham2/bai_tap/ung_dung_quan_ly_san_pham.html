@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ứng dụng quản lý sản phẩm</title>
+</head>
+<body>
+<form>
+    <p> Add new product</p>
+    <input type="text" id="input" placeholder="new product"/>
+    <input type="button" id="add" value="add" onclick="add()"><br>
+    <label>amount product:</label> <span id="soluong"></span>
+    <p id="ketqua"> </p>
+<!--    <table border="1" id="table">-->
+<!--        <tr>-->
+<!--            <th>STT</th>-->
+<!--            <th>product name</th>-->
+<!--            <th> edit</th>-->
+<!--            <th>delete</th>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>1</td>-->
+<!--            <td> sony xperia</td>-->
+<!--            <td><input type="button" id="edit" value="edit" onclick="edit1()"></td>-->
+<!--            <td><input type="button" id="delete" value="delete" onclick="delete1()"></td>-->
+<!--        </tr>-->
+<!--    </table>-->
+</form>
+<script>
+    let a = ["Apple Iphone X", "Xiaomi Redmi Note 4", "Sony Eperia", "Oppo F1S"];
+    function hienthi() {
+
+        let result;
+        result += '<table border="/1/" id="/table/">\n" +
+            '        <tr>\n' +
+            '         <th>STT</th>\n' +
+            '          <th>product name</th>\n'+
+            '           <th> edit</th>\n'+
+            '           <th>delete</th>\n'+
+            '       </tr>';
+        for (let i = 0; i <= a.length; i++) {
+            result += 'tr>\n'+
+                '           <td>'+(i+1)+'</td>\n'+
+                '          <td>'+(a[i])+'</td>\n'+
+                '          <td><input type=\"button\" id=\"edit\" value=\"edit\" onclick=\"edit1()\"></td>\n'+
+                '          <td><input type=\"button\" id=\"delete\" value=\"delete\" onclick=\"delete1()\"></td>\n'+
+                '       </tr> ';
+        }
+        result += '/table>';
+        document.getElementById(ketqua).innerHTML=result;
+        document.getElementById(soluong).innerHTML=a.length;
+
+    }
+    function add() {
+        let tensp=document.getElementById(input).value;
+        if(tensp!=" "){
+            a.push(tensp);
+        }
+        document.getElementById(input).value=" ";
+       hienthi();
+    }
+    function delete1(i) {
+        let xacnhanxoa=alert("bạn có muốn xóa sản phẩm "+a[i]+ "không?");
+        if(xacnhanxoa){
+            a.slice(i,1)
+        }
+        hienthi();
+    }
+    function edit1(i) {
+
+
+    }
+    hienthi();
+    
+</script>
+
+
+</body>
+</html>

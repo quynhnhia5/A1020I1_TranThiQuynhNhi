@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form>
+    <label>chuyển đổi </label>
+    <input type="text" id="input" placeholder="Nhập số cần chuyển"/>
+    <select>
+        <option onclick="feet"> feet </option>
+        <option onclick="meter"> meter </option>
+    </select>
+    <p>kết quả: <span id="ketqua"></span></p>
+
+
+</form>
+<script>
+    function footToMeter(foot){
+        let meter=parseFloat;
+        foot=parseFloat(foot);
+
+
+        meter = 0.305 * foot;
+        return meter;
+    }
+    function meterToFoot(meter){
+        let foot=parseFloat;
+        meter=parseFloat(meter);
+        foot = 3.279 * meter;
+        return foot;
+
+    }
+    let s = document.getElementById("input").value;
+    if(onclick=="feet") {
+        document.getElementById("ketqua").innerHTML = footToMeter(s);
+    } else {
+        document.getElementById("ketqua").innerHTML = meterToFoot(s);
+    }
+</script>
+</body>
+</html>
