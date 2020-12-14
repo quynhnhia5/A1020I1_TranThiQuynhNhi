@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Mobile {
+        constructor(parameter,memoryarea,memoryarea1,memoryarea2 ) {
+            this.parameter =parameter;
+            this.memoryarea =[];
+            this.memoryarea1 =[];
+            this.memoryarea2 =[];
+            this.status=false;
+        }
+
+        getStatus() {
+            if (this.parameter>0){
+                return "On"
+            }else {
+                return "Off"
+            }
+        }
+
+        turnOnOff() {
+            if(this.parameter>0)
+           this.status =!this.status;
+        }
+
+        getCharge() {
+          return this.parameter;
+        }
+
+        makeMessage() {
+            this.parameter--;
+            let texting = prompt("soạn tin nhắn muốn gửi:");
+            this.memoryarea.push(texting);
+        }
+
+        receiveMessage(message) {
+            this.memoryarea1.push(message);
+            this.parameter--;
+
+        }
+
+        sentMessage(phone){
+          phone.receiveMessage(this.memoryarea);
+          this.memoryarea2.push(this.memoryarea);
+          this.memoryarea=[]
+          this.parameter--;
+        }
+       getPin() {
+           return this.parameter;
+        }
+        showRecieveMessage(){
+            return this.memoryarea1;
+        }
+    }
+
+
+    let iphone=new Mobile(15,"","","");
+    let nokia=new Mobile(4,"","","");
+    document.write(" The iphone:"+"<br>")
+    document.write("the phone turn :"+iphone.getStatus()+"<br>");
+    document.write("gửi tin nhắn đi:"+iphone.sentMessage()+"<br>");
+    document.write("tình trạng bin:"+iphone.getCharge()+"<br>");
+
+    document.write("bin con lai sau khi su dung la: "+iphone.getPin()+"<br>");
+    document.write("the nokia:");
+    document.write("the nokia turn " +nokia.getStatus()+"<br>");
+    document.write("tình trạng bin: "+nokia.getCharge()+"<br>");
+    ;
+    document.write("tin nhan nhan duoc la:"+nokia.showRecieveMessage()+"<br>");
+    document.write("bin con lai sau khi su dung la: "+nokia.getPin()+"<br>");
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class sinhvien{
+        constructor(name,age) {
+            this.name=name;
+            this.age=age;
+        }
+    }
+    let ds=[];
+    let n=prompt("nhập số lượng sinh viên");
+    for( let i=0;i<n;i++){
+        let name=prompt("nhập tên sinh viên thứ :"+(i+1));
+        let age=prompt("nhập tuổi sinh viên"+(i+1));
+        let sinhvien2=new sinhvien(name,age);
+        ds.push(sinhvien2);
+    }
+    for(i=0;i<ds.length;i++){
+        document.write("sinh viên tên :");
+        document.write(ds[i].name +"<br>" );
+        document.write("tuổi:");
+        document.write(ds[i].age + "<br>");
+    }
+
+</script>
+</body>
+</html>

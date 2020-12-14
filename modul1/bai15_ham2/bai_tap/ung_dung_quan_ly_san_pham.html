@@ -8,7 +8,7 @@
 <form>
     <p> Add new product</p>
     <input type="text" id="input" placeholder="new product"/>
-    <input type="button" id="add" value="add" onclick="add()"><br>
+    <input type="button" id="add" value="add" onclick="add1()"><br>
     <label>amount product:</label> <span id="soluong"></span>
     <p id="ketqua"> </p>
 <!--    <table border="1" id="table">-->
@@ -27,50 +27,55 @@
 <!--    </table>-->
 </form>
 <script>
-    let a = ["Apple Iphone X", "Xiaomi Redmi Note 4", "Sony Eperia", "Oppo F1S"];
+    let a = ["soni","iphone","samsung","nokia","readmi"];
+    hienthi();
     function hienthi() {
-
         let result;
-        result += '<table border="/1/" id="/table/">\n" +
+        result = '<table border="1" id="table">\n' +
             '        <tr>\n' +
-            '         <th>STT</th>\n' +
-            '          <th>product name</th>\n'+
-            '           <th> edit</th>\n'+
-            '           <th>delete</th>\n'+
-            '       </tr>';
-        for (let i = 0; i <= a.length; i++) {
-            result += 'tr>\n'+
-                '           <td>'+(i+1)+'</td>\n'+
-                '          <td>'+(a[i])+'</td>\n'+
-                '          <td><input type=\"button\" id=\"edit\" value=\"edit\" onclick=\"edit1()\"></td>\n'+
-                '          <td><input type=\"button\" id=\"delete\" value=\"delete\" onclick=\"delete1()\"></td>\n'+
-                '       </tr> ';
+            '            <th>STT</th>\n' +
+            '            <th>product name</th>\n' +
+            '            <th> edit</th>\n' +
+            '            <th>delete</th>\n' +
+            '        </tr>';
+        for (let i = 0; i < a.length; i++) {
+            result += '<tr>\n' +
+                '            <td>'+(i+1)+'</td>\n' +
+                '            <td>'+a[i]+'</td>\n' +
+                '            <td><input type="button" id="edit" value="edit" onclick="edit1('+i+')"></td>\n' +
+                '            <td><input type="button" id="delete" value="delete" onclick="delete1('+i+')"></td>\n' +
+                '        </tr>';
         }
-        result += '/table>';
-        document.getElementById(ketqua).innerHTML=result;
-        document.getElementById(soluong).innerHTML=a.length;
+        result += '</table>';
+        document.getElementById("ketqua").innerHTML=result;
+        document.getElementById("soluong").innerHTML=a.length;
 
     }
-    function add() {
-        let tensp=document.getElementById(input).value;
-        if(tensp!=" "){
-            a.push(tensp);
+    function add1() {
+        let tenSp=document.getElementById("input").value;
+        if(tenSp!==""){
+            a.push(tenSp);
         }
-        document.getElementById(input).value=" ";
+        document.getElementById("input").value=" ";
        hienthi();
     }
-    function delete1(i) {
-        let xacnhanxoa=alert("bạn có muốn xóa sản phẩm "+a[i]+ "không?");
+    function delete1(id) {
+        let xacnhanxoa=confirm("bạn có muốn xóa sản phẩm " +a[id]+  " không?");
         if(xacnhanxoa){
-            a.slice(i,1)
+            a.splice(id,1)
         }
         hienthi();
     }
-    function edit1(i) {
-
-
+    function edit1(id) {
+        //alert(id)//kiemtra xem hàm có nhận chưa
+        let tenspmoi = prompt(" Nhập tên sản phẩm mới");
+        if (tenspmoi != null && tenspmoi !== "") {
+            a[id] = tenspmoi;
+        }
+        hienthi()
     }
-    hienthi();
+
+
     
 </script>
 
