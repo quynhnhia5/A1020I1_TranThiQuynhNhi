@@ -1,0 +1,20 @@
+begin
+    input:Đ
+    if(Đ>=75) 
+       display A
+    else
+       if(Đ>=60) 
+          display B
+       else
+          if(Đ>=45)
+             display C
+          else
+             if(Đ>=35)
+                display D
+             else
+                display E
+             end if
+           end if
+       end if
+    end if
+end

@@ -6,21 +6,24 @@
 </head>
 <body>
 <script>
-    class Temperature{
-        constructor(value) {
-            this.value=value;
+    class Temperature {
+        constructor(nhietDo) {
+            this.doC = nhietDo;
         }
-        getConvert(){
-           return (9/5 *this.value + 32);
+
+        getConvert() {
+            return (9 / 5 * this.doC + 32);
         }
-        getConvert2(){
-            return (this.value +273.15);
+
+        getConvert2() {
+            return (this.doC + 273.15);
         }
     }
-    let nhietdo=parseInt(prompt("nhập nhiệt độ:"));
-    nhietdo=new Temperature(nhietdo);
-    document.write(+nhietdo +"độ C "+"="+nhietdo.getConvert()+"độ F"+"<br>");
-    document.write(+nhietdo +"độ C"+"=" +nhietdo.getConvert2()+" độ kenvin");
+
+    let doC = parseInt(prompt("nhập nhiệt độ:"));
+    let nhietdo = new Temperature(doC);
+    document.write(doC + "độ C " + "=" + nhietdo.getConvert() + "độ F" + "<br>");
+    document.write(doC + "độ C" + "=" + nhietdo.getConvert2() + " độ kenvin");
 </script>
 </body>
 </html>

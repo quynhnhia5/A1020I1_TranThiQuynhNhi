@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let name;
+    let cmnd;
+    let birthday;
+    let email;
+    let address;
+    let typeservice;//loại dịch vụ
+    let typeroon;//loại phòng
+    let typecustomer;//loại khách hàng
+    let discount;//giảm giá
+    let quantityincluded;//số lượng đi kèm
+    let renddays;//ngày thuê
+
+    let totalpay;
+    let tempName=" ";
+    let tempadd=" ";
+    let tempcus=" ";
+    let check=false;
+    let arrNameCustomers=[];
+    name=prompt("input name:");
+    name=name.trim();
+    for(let i=0;i<name.length;i++){
+        if(name.charAt(i)==" "&&name.charAt(i+1)==" "){
+            continue;
+        }
+        tempName+=name.charAt(i);
+    }
+    alert(tempName);
+    do {
+        cmnd=prompt("input cmnd:");
+        if(!isNaN(cmnd)){
+            cmnd=Number.parseFloat(cmnd);
+        }
+        if(!Number.isInteger(cmnd)){
+            alert("cmnd không đúng định dạng");
+            continue;
+        }
+        if(cmnd<10000000||cmnd>99999999){
+            alert("cmnd không đúng định dạng ");
+            continue;
+        }
+        check=true;
+
+    } while (!check)
+    check=false;
+    do {
+        birthday = prompt("input birthday:");
+        if (birthday.charAt(2) === "/" && birthday.charAt(5) === "/") {
+            let day = birthday.substring(0, 2);
+            let month = birthday.substring(3, 5);
+            let year = birthday.substring(6, 10);
+            if (!isNaN((day)) && !isNaN((month)) && !isNaN((year))) {
+                day = Number.parseFloat(day);
+                month = Number.parseFloat(month);
+                year = Number.parseFloat(year);
+                if (Number.isInteger(day) && Number.isInteger(month) && Number.isInteger(year)) {
+                    if ((day < 32) && (month < 13)&&year>1950) {
+                        check = true;
+                    }
+                }
+            }
+        }
+        if (!check) {
+            alert("ngày sinh không đúng định dạng");
+        }
+    }while (!check)
+    check=false;
+
+
+    do{
+         let countAt=0;
+         let coutDoc=0;
+        email=prompt("input email: ");
+        for(let i=0;i<email.length;i++){
+            if(email.charAt(i)==="@"){
+                countAt++;
+                for(let j=i+1;j<email.length;j++){
+                    if(email.charAt(j)==="."){
+                        coutDoc++;
+                    }
+                }
+            }
+        }
+        if(countAt!=1||coutDoc<1){
+            alert("email bạn nhập không đúng");
+        }else{
+            check=true;
+        }
+    }while (!check)
+
+check=false;
+    address=prompt("input address:");
+    address=address.trim();
+    for(let i=0;i<address.length;i++){
+        if(address.charAt(i)==" "&&address.charAt(i+1)==" "){
+            continue;
+        }
+        tempadd+=address.charAt(i);
+    }
+    alert(tempadd);
+    typeservice=prompt("input type service:");
+
+    typecustomer=prompt("input type customer:");
+    typecustomer=typecustomer.trim();
+    for(let i=0;i<typecustomer.length;i++){
+        if(typecustomer.charAt(i)==" "&&typecustomer.charAt(i+1)==" "){
+            continue;
+        }
+        tempcus+=typecustomer.charAt(i);
+    }
+
+    alert(tempcus);
+    typeroon=prompt("input type roon:");
+    discount=prompt("input discount:");
+    quantityincluded=prompt("input quantityincluded:");
+    do{
+        renddays=prompt("input renddays:");
+        if(!isNaN(renddays)){
+            renddays=Number.parseFloat(renddays);
+            if(Number.isInteger(renddays)&&renddays>0){
+                check=true;
+            }
+        }
+        if(!check){
+            alert("renddays không phải số nguyên dương")
+        }
+    }while (!check)
+    arrNameCustomers.push(typecustomer);
+    let choose=parseInt(prompt("1.add name customer" +
+        "\n 2. delete customer"));
+    switch(choose){
+        case 1:{
+            let number=parseInt(prompt("enter number customer:"));
+            for(let i=0;i<number;i++){
+                arrNameCustomers[i]=prompt("nhập customer thứ "+(i+1));
+            }
+            break;
+        }
+        case 2:{
+            let delt = prompt("enter customer delete");
+            for(let i=0;i<arrNameCustomers.length;i++){
+                if(arrNameCustomers[i]==delt){
+                    arrNameCustomers.splice(i,1);
+                }
+            }
+           break;
+        }
+
+    }
+    alert(arrNameCustomers);
+
+    totalpay=300*renddays*(1-discount/100);
+    alert("name:"+name+
+        "\ncmnd:"+cmnd+"\ntotalpay:"+totalpay);
+</script>
+</body>
+</html>

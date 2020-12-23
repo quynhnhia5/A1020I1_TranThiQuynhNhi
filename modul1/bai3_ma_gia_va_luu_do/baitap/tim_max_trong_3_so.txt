@@ -1,0 +1,16 @@
+begin
+    input:a,b,c
+    max=a
+    if(max>b)
+        if(max>c)
+            display max
+        end if
+    else
+        if(b>c)  
+            max=b
+        else
+            max=c
+        end if
+     end if
+display max
+end

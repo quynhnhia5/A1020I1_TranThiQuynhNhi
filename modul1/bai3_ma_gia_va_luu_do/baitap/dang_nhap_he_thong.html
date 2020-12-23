@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>đăng nhập hệ thống người dùng</title>
+</head>
+<body>
+  <script>
+      let tendangnhap = prompt("nhập tên đăng nhập:");
+      if(tendangnhap== "admin") {
+          let mk= prompt("nhập mật khẩu");
+          if(mk=="themaster"){
+              alert("welcome");
+          }
+          else if(mk== "null") {
+              alert("Canceled");
+          }
+          else{
+              alert(" wrong password");
+          }
+          }
+      else if(tendangnhap=="null"){
+          alert("canceld");}
+          else{
+              alert("i don't know you");
+      }
+  </script>
+</body>
+</html>

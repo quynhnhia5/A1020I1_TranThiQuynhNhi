@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let name;
+    let cmnd;
+    let birthday;
+    let email;
+    let address;
+    let typeservice;//loại dịch vụ
+    let typeroon;//loại phòng
+    let typecustomer;//loại khách hàng
+    let discount;//giảm giá
+    let quantityincluded;//số lượng đi kèm
+    let renddays;//ngày thuê
+    let totalpay;
+    name=prompt("input name:");
+    cmnd=prompt("input cmnd:");
+    birthday=prompt("input birthday:");
+    email=prompt("input email: ");
+    address=prompt("input address:");
+    typeservice=prompt("input type service:");
+    typecustomer=prompt("input type customer:");
+    typeroon=prompt("input type roon:");
+    discount=prompt("input discount:");
+    quantityincluded=prompt("input quantityincluded:");
+    renddays=prompt("input renddays:");
+    totalpay=300*renddays*(1-discount/100);
+    alert("name:"+name+
+    "\ncmnd:"+cmnd+"\ntotalpay:"+totalpay);
+</script>
+</body>
+</html>

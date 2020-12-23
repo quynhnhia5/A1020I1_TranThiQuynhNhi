@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let name="nhi";
+    let cmnd="2000";
+    let birthday="1/1/2000";
+    let email="quynhnhi";
+    let address="quang nam";
+    let typeservice="villa";//loại dịch vụ
+    let typeroon="vip";//loại phòng
+    let typecustomer="diamond";//loại khách hàng
+    let discount=10;//giảm giá
+    let quantityincluded=10;//số lượng đi kèm
+    let renddays=7;//ngày thuê
+    let totalpay;
+    // name=prompt("input name:");
+    // cmnd=prompt("input cmnd:");
+    // birthday=prompt("input birthday:");
+    // email=prompt("input email: ");
+    // address=prompt("input address:");
+    // typeservice=prompt("input type service:");
+    // typecustomer=prompt("input type customer:");
+    // typeroon=prompt("input type roon:");
+    // discount=prompt("input discount:");
+    // quantityincluded=prompt("input quantityincluded:");
+    // renddays=prompt("input renddays:");
+    totalpay=(300*renddays*(1-discount/100));
+    let choose=parseInt(prompt("1.Hiển thị thông tin khách hàng"+
+        "\n 2.Chỉnh sửa thông tin khách hàng"+
+        "\n 3.Hiển thị giá sau khi được giảm giá"));
+    switch (choose) {
+        case 1:{
+            alert(" name:" +name+
+                "\n cmnd:"+cmnd+
+                "\n ngày sinh:"+birthday+
+                "\n email:"+email+
+                "\n địa chỉ:"+address+
+                "\n loại dịch vụ:"+typeservice+
+                "\n loại phòng:"+typeroon+
+                "\n loại khách hàng:"+typecustomer+
+                "\n giảm giá:"+discount+
+                "\n số lượng đi kèm:"+quantityincluded+
+                "\n số lượng ngày:"+renddays);
+            break;
+        }
+        case 2: {
+            let edit = parseInt(prompt("1.name:" + name +
+                "\n 2.cmnd:" + cmnd +
+                "\n 3.ngày sinh:" + birthday +
+                "\n 4.email:" + email +
+                "\n 5.địa chỉ:" + address +
+                "\n 6.loại dịch vụ:" + typeservice +
+                "\n 7.loại phòng:" + typeroon +
+                "\n 8.loại khách hàng:" + typecustomer +
+                "\n 9.giảm giá:" + discount +
+                "\n 10.số lượng đi kèm:" + quantityincluded +
+                "\n 11.số lượng ngày:" + renddays));
+            switch (edit) {
+                case 1: {
+                    name = prompt("enter name:");
+                    break;
+                }
+                case 2: {
+                    birthday = prompt("enter birthday:");
+                    break;
+                }
+                default:{
+                    alert("failer");
+                }
+            }
+            alert(" name:" +name+
+                "\n cmnd:"+cmnd+
+                "\n ngày sinh:"+birthday+
+                "\n email:"+email+
+                "\n địa chỉ:"+address+
+                "\n loại dịch vụ:"+typeservice+
+                "\n loại phòng:"+typeroon+
+                "\n loại khách hàng:"+typecustomer+
+                "\n giảm giá:"+discount+
+                "\n số lượng đi kèm:"+quantityincluded+
+                "\n số lượng ngày:"+renddays);
+        }
+        case 3:{
+            let money=0;
+            if(typeservice=="villa"){
+                money=500;
+            }else if(typeservice=="house"){
+                money=300;
+            }else if(typeservice=="roon"){
+                money=100;
+            }
+            let temp=0;
+            if(address=="da nang"){
+                temp+=20;
+            }else if(address=="hue"){
+                temp+=10;
+            }else if(address=="quang nam "){
+                temp+=5;
+            }
+            if(renddays>7){
+                temp+=30;
+            }else if(renddays>5){
+                temp+=20;
+            }else if(renddays>2){
+                temp+=10;
+            }
+            if(typecustomer=="diamond"){
+                temp+=15;
+            }else if(typecustomer=="platium"){
+                temp+=10;
+            }else if(typecustomer=="gold"){
+                temp+=5;
+            }else if(typecustomer=="silver"){
+                temp+=2;
+            }else if(typecustomer=="member"){
+                temp+=0;
+            }
+            alert("total pay:"+(money*renddays-temp));
+            break;
+        }
+
+
+
+    }
+
+</script>
+</body>
+</html>

@@ -7,7 +7,7 @@
 <body>
 <script>
     class Mobile {
-        constructor(parameter,memoryarea,memoryarea1,memoryarea2 ) {
+        constructor(parameter) {
             this.parameter =parameter;
             this.memoryarea =[];
             this.memoryarea1 =[];
@@ -55,23 +55,23 @@
         }
         showRecieveMessage(){
             return this.memoryarea1;
+            this.parameter--;
         }
     }
 
 
-    let iphone=new Mobile(15,"","","");
-    let nokia=new Mobile(4,"","","");
+    let iphone=new Mobile(50,"","","");
+    let nokia=new Mobile(20,"","","");
     document.write(" The iphone:"+"<br>")
     document.write("the phone turn :"+iphone.getStatus()+"<br>");
-    document.write("gửi tin nhắn đi:"+iphone.sentMessage()+"<br>");
     document.write("tình trạng bin:"+iphone.getCharge()+"<br>");
-
+    iphone.makeMessage();
     document.write("bin con lai sau khi su dung la: "+iphone.getPin()+"<br>");
     document.write("the nokia:");
     document.write("the nokia turn " +nokia.getStatus()+"<br>");
     document.write("tình trạng bin: "+nokia.getCharge()+"<br>");
-    ;
-    document.write("tin nhan nhan duoc la:"+nokia.showRecieveMessage()+"<br>");
+
+    document.write("tin nhan nhan duoc la:"+ nokia.showRecieveMessage()+"<br>");
     document.write("bin con lai sau khi su dung la: "+nokia.getPin()+"<br>");
 
 

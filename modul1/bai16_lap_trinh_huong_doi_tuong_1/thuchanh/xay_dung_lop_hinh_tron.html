@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class circle {
+        constructor(radius, color) {
+            this.radius = radius;
+            this.color = "";
+        }
+
+        getRadius() {
+            return this.radius;
+        }
+
+        getArea() {
+            return  Math.PI * this.radius * this.radius;
+        }
+    }
+        let ht=new circle(1,"red");
+        document.write("bán kính hình tròn là:"+ht.getRadius()+"<br>"+"diện tích hình tròn là:"+ht.getArea());
+
+
+</script>
+</body>
+</html>
