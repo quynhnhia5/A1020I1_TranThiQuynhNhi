@@ -1,0 +1,31 @@
+package Animal_interface_Edible.animal;
+
+import Animal_interface_Edible.animal.animal.Animal;
+import Animal_interface_Edible.animal.animal.Chicken;
+import Animal_interface_Edible.animal.animal.Tiger;
+import Animal_interface_Edible.animal.edible.Edible;
+import Animal_interface_Edible.animal.fruit.Fruit;
+import Animal_interface_Edible.animal.fruit.Orange;
+import Animal_interface_Edible.animal.fruit.Apple;
+
+public class AbstractAndInterfaceTests {
+  public static void main(String[] args) {
+    Animal[] animals = new Animal[2];
+    animals[0] = new Tiger();
+    animals[1] = new Chicken();
+    Fruit[] fruits = new Fruit[2];
+    fruits[0] = new Orange();
+    fruits[1] = new Apple();
+    for (Animal animal : animals) {
+      System.out.println(animal.makeSound());
+
+      if (animal instanceof Chicken) {
+        Edible edibler = (Chicken) animal;
+        System.out.println(edibler.howToEat());
+      }
+    }
+    for (Fruit fruit : fruits) {
+      System.out.println(fruit.howToEat());
+    }
+  }
+}
