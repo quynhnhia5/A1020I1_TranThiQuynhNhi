@@ -12,7 +12,7 @@ public class Main {
     }
     System.out.println("After-sorted:");
     for (Resizeable resizable : resizeable) {
-      resizable.resize(30);
+      resizable.resize(50);
       System.out.println(resizable);
     }
 

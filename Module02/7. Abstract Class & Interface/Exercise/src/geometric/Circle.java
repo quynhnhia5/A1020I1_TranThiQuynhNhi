@@ -1,6 +1,6 @@
 package geometric;
 public class Circle extends Shape {
-  protected double radius=1.0;
+  private double radius=1.0;
 
   public Circle() {
   }

@@ -12,7 +12,7 @@ public class RectangleResize extends geometric.Rectangle implements Resizeable {
     super(width, length, color, filled);
   }
   public void resize(double percent){
-    this.length+= (this.getLength()*percent)/100;
-    this.width += (this.getWidth() * percent) / 100;
+    this.setLength((this.getLength()*(100 + percent))/100);
+    this.setWidth((this.getWidth() * (100 + percent)) / 100);
   }
 }

@@ -1,8 +1,6 @@
 package interface_resizeable;
 import geometric.Square;
 public class SquareResize extends geometric.Square implements Resizeable {
-  protected double getSize;
-  protected double side;
 
   public SquareResize() {
   }
@@ -15,6 +13,6 @@ public class SquareResize extends geometric.Square implements Resizeable {
     super(side, color, filled);
   }
   public void resize(double percent){
-    this.side+=(this.getSide()*percent)/100;
+    this.setSide((this.getSide()*(100+ percent))/100);
   }
 }

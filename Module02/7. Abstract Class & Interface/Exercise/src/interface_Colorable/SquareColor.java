@@ -13,6 +13,10 @@ public class SquareColor extends Square implements Colorable {
   public SquareColor(double side, String color, boolean filled) {
     super(side, color, filled);
   }
+
+  public double getArea(){
+    return getSide() * getSide();
+  }
   public void howToColor(){
     System.out.println("Color all four sides");
   }

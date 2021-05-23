@@ -15,6 +15,6 @@ public class CircleResize extends geometric.Circle implements Resizeable {
     super(radius, color, filled);
   }
   public void resize(double percent){
-    this.radius += (this.getRadius() * percent) / 100;
+    this.setRadius((this.getRadius()*(100+ percent) )/ 100);
   }
 }
