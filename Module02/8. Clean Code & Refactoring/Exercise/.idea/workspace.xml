@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="610a4ddd-5614-43ca-9fbf-9069e1375c10" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Practice/src/refactoring/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice/src/refactoring/CalculatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice/src/refactoring_method/Cylinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice/src/refactoring_split_variable/FizzBuzz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Practice/src/refactoring_split_variable/FizzBuzzTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7. Abstract Class &amp; Interface/Exercise/src/geometric/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../7. Abstract Class &amp; Interface/Exercise/src/geometric/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7. Abstract Class &amp; Interface/Exercise/src/geometric/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../7. Abstract Class &amp; Interface/Exercise/src/geometric/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7. Abstract Class &amp; Interface/Exercise/src/geometric/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../7. Abstract Class &amp; Interface/Exercise/src/geometric/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7. Abstract Class &amp; Interface/Exercise/src/interface_Colorable/Colorable.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../7. Abstract Class &amp; Interface/Exercise/src/interface_Colorable/Colorable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7. Abstract Class &amp; Interface/Exercise/src/interface_Colorable/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../7. Abstract Class &amp; Interface/Exercise/src/interface_Colorable/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7. Abstract Class &amp; Interface/Exercise/src/interface_Colorable/SquareColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../7. Abstract Class &amp; Interface/Exercise/src/interface_Colorable/SquareColor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7. Abstract Class &amp; Interface/Exercise/src/interface_resizeable/CircleResize.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../7. Abstract Class &amp; Interface/Exercise/src/interface_resizeable/CircleResize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7. Abstract Class &amp; Interface/Exercise/src/interface_resizeable/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../7. Abstract Class &amp; Interface/Exercise/src/interface_resizeable/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7. Abstract Class &amp; Interface/Exercise/src/interface_resizeable/RectangleResize.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../7. Abstract Class &amp; Interface/Exercise/src/interface_resizeable/RectangleResize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7. Abstract Class &amp; Interface/Exercise/src/interface_resizeable/SquareResize.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../7. Abstract Class &amp; Interface/Exercise/src/interface_resizeable/SquareResize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7. Abstract Class &amp; Interface/out/production/Exercise/geometric/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../7. Abstract Class &amp; Interface/out/production/Exercise/geometric/Circle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7. Abstract Class &amp; Interface/out/production/Exercise/geometric/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../7. Abstract Class &amp; Interface/out/production/Exercise/geometric/Rectangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7. Abstract Class &amp; Interface/out/production/Exercise/geometric/Shape.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../7. Abstract Class &amp; Interface/out/production/Exercise/geometric/Shape.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7. Abstract Class &amp; Interface/out/production/Exercise/interface_resizeable/CircleResize.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../7. Abstract Class &amp; Interface/out/production/Exercise/interface_resizeable/CircleResize.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7. Abstract Class &amp; Interface/out/production/Exercise/interface_resizeable/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../7. Abstract Class &amp; Interface/out/production/Exercise/interface_resizeable/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7. Abstract Class &amp; Interface/out/production/Exercise/interface_resizeable/RectangleResize.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../7. Abstract Class &amp; Interface/out/production/Exercise/interface_resizeable/RectangleResize.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../7. Abstract Class &amp; Interface/out/production/Exercise/interface_resizeable/SquareResize.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../7. Abstract Class &amp; Interface/out/production/Exercise/interface_resizeable/SquareResize.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1shd0o4Yzb0wmHXJIGYV6fdqZeS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="610a4ddd-5614-43ca-9fbf-9069e1375c10" name="Default Changelist" comment="" />
+      <created>1621328534937</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1621328534937</updated>
+      <workItem from="1621328536484" duration="100000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1621328635911">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1621328635911" />
+  </component>
+</project>
