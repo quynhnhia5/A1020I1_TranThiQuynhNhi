@@ -106,7 +106,8 @@ public class LinkedList<E> {
     LinkedList<E> newLinkedList = new LinkedList<>();
     Node temp = head;
     for (int i = 0; i < numNodes; i++) {
-      newLinkedList.addLast((E) temp);
+      newLinkedList.addLast((E) temp.getData());
+      temp=temp.next;
     }
     return newLinkedList;
   }

@@ -13,6 +13,9 @@ public class LinkedListTest {
     linked.printList();
     System.out.println("Last: " + linked.getLast());
     System.out.println("get: " + linked.get(2));
+    LinkedList<Integer> linked2=new LinkedList<>();
+    linked2=linked.clone();
+    linked2.printList();
   }
 
 }
