@@ -3,32 +3,34 @@ package Models;
 import Models.Services;
 
 public class Room extends Services {
-   private String FreeService;
+  private String accompaniedService;
 
   public Room() {
   }
 
-  public Room(String freeService) {
-    FreeService = freeService;
+  public Room(String id, String nameServices, String areaUse, String rentPrice, String maxNumberOfPeople, String rentalType, String freeService) {
+    super(id, nameServices, areaUse, rentPrice, maxNumberOfPeople, rentalType);
+    accompaniedService = accompaniedService;
   }
 
-  public String getFreeService() {
-    return FreeService;
+  public String getAccompaniedService() {
+    return accompaniedService;
   }
 
-  public void setFreeService(String freeService) {
-    FreeService = freeService;
-  }
-
-  @Override
-  public String toString() {
-    return "Room{" +
-            "FreeService='" + FreeService + '\'' +
-            '}';
+  public void setAccompaniedService(String accompaniedService) {
+    this.accompaniedService = accompaniedService;
   }
 
   @Override
-  public void showInfor() {
-super.toString();
+  public void showInfo() {
+    System.out.println("Services{" +
+            "id='" + getId() + '\'' +
+            ", nameServices='" + getNameServices() + '\'' +
+            ", areUse='" + getAreaUse() + '\'' +
+            ", rentPrice='" + getRentPrice() + '\'' +
+            ", maxNumberOfPeople='" + getMaxNumberOfPeople() + '\'' +
+            ", rentalType='" + getRentalType() + '\'' +
+            ", accompaniedService='" + accompaniedService + '\'' +
+            '}');
   }
 }

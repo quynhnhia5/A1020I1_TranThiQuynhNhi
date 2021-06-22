@@ -1,5 +1,7 @@
 package Controllers;
 
+import manager.ServicesManager;
+
 import java.util.Scanner;
 
 public class MainController {
@@ -8,7 +10,7 @@ public class MainController {
     Scanner scanner = new Scanner(System.in);
     boolean check = true;
     do {
-      System.out.println("MENU" +
+      System.out.println("-----MENU------\n" +
               "1." + "Add New Services\n" +
               "2." + "Show Services\n" +
               "3." + "Add New Customer\n" +
@@ -20,16 +22,30 @@ public class MainController {
       int choice = scanner.nextInt();
       switch (choice) {
         case 1:
-          addNewServices();
+          ServicesManager.addNewServies();
           break;
         case 2:
-          showServices();
+          ServicesManager.showServices();
           break;
         case 3:
 
+          break;
+        case 4:
+          break;
+
+        case 5:
+          break;
+        case 6:
+          break;
 
       }
 
     } while (check);
   }
+
+  public static void main(String[] args) {
+    displayMainMenu();
+  }
+
+
 }

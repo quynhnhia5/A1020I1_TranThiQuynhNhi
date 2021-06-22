@@ -13,10 +13,10 @@ public class EmployManager {
   public static List<Employee> employeeList=new ArrayList<>();
 
 
-  public static void addEmployee(){
+  public static void addEmployee( Employee employee){
      Scanner scanner=new Scanner(System.in);
 
-    System.out.print("Nhap id nhan vien: ");
+    System.out.print("Enter ID: ");
     String idEmp=scanner.nextLine();
 
     System.out.print("Nhap ho ten nhan vien: ");
@@ -43,10 +43,7 @@ public class EmployManager {
     System.out.print("Nhap luong cua nhan vien: ");
     String salaryEmp=scanner.nextLine();
 
-    employeeList.add(e)
-
-
-
+    employeeList.add(employee);
 
   }
 

@@ -6,16 +6,18 @@ public class House extends Services {
 
   private String standardRoom;
   private String describeConvenient;
-  private String areaPool;
+  private String numberOfFloors;
 
   public House() {
   }
 
-  public House(String standardRoom, String describeConvenient, String areaPool) {
+  public House(String id, String nameServices, String areaUse, String rentPrice, String maxNumberOfPeople, String rentalType, String standardRoom, String describeConvenient, String numberOfFloors) {
+    super(id, nameServices, areaUse, rentPrice, maxNumberOfPeople, rentalType);
     this.standardRoom = standardRoom;
     this.describeConvenient = describeConvenient;
-    this.areaPool = areaPool;
+    this.numberOfFloors =numberOfFloors;
   }
+
 
   public String getStandardRoom() {
     return standardRoom;
@@ -33,25 +35,35 @@ public class House extends Services {
     this.describeConvenient = describeConvenient;
   }
 
-  public String getAreaPool() {
-    return areaPool;
+  public String getNumberOfFloors() {
+    return numberOfFloors;
   }
 
-  public void setAreaPool(String areaPool) {
-    this.areaPool = areaPool;
+  public void setNumberOfFloors(String numberOfFloors) {
+    this.numberOfFloors = numberOfFloors;
   }
+
+//  @Override
+//  public String toString() {
+//    return "House{" +
+//            "standardRoom='" + standardRoom + '\'' +
+//            ", describeConvenient='" + describeConvenient + '\'' +
+//            ", numberofFloors='" + numberOfFloors + '\'' +
+//            '}';
+//  }
 
   @Override
-  public String toString() {
-    return "House{" +
-            "standardRoom='" + standardRoom + '\'' +
+  public void showInfo() {
+    System.out.println("Services{" +
+            "id='" + getId() + '\'' +
+            ", nameServices='" + getNameServices() + '\'' +
+            ", areUse='" + getAreaUse() + '\'' +
+            ", rentPrice='" + getRentPrice() + '\'' +
+            ", maxNumberOfPeople='" + getMaxNumberOfPeople() + '\'' +
+            ", rentalType='" + getRentalType() + '\'' +
+            ", standardRoom='" + standardRoom + '\'' +
             ", describeConvenient='" + describeConvenient + '\'' +
-            ", areaPool='" + areaPool + '\'' +
-            '}';
-  }
-
-  @Override
-  public void showInfor() {
-super.toString();
+            ", numberOfFloors='" + numberOfFloors + '\'' +
+            '}');
   }
 }

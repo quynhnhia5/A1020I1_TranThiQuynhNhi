@@ -3,7 +3,7 @@ package Models;
 public abstract class Services {
   private String id;
   private String nameServices;
-  private String areUse;
+  private String areaUse;
   private String rentPrice;
   private String maxNumberOfPeople;
   private String rentalType;
@@ -11,10 +11,10 @@ public abstract class Services {
   public Services() {
   }
 
-  public Services(String id, String nameServices, String areUse, String rentPrice, String maxNumberOfPeople, String rentalType) {
+  public Services(String id, String nameServices, String areaUse, String rentPrice, String maxNumberOfPeople, String rentalType) {
     this.id = id;
     this.nameServices = nameServices;
-    this.areUse = areUse;
+    this.areaUse = areaUse;
     this.rentPrice = rentPrice;
     this.maxNumberOfPeople = maxNumberOfPeople;
     this.rentalType = rentalType;
@@ -36,12 +36,12 @@ public abstract class Services {
     this.nameServices = nameServices;
   }
 
-  public String getAreUse() {
-    return areUse;
+  public String getAreaUse() {
+    return areaUse;
   }
 
-  public void setAreUse(String areUse) {
-    this.areUse = areUse;
+  public void setAreUse(String areaUse) {
+    this.areaUse = areaUse;
   }
 
   public String getRentPrice() {
@@ -68,16 +68,16 @@ public abstract class Services {
     this.rentalType = rentalType;
   }
 
-  @Override
-  public String toString() {
-    return "Services{" +
-            "id='" + id + '\'' +
-            ", nameServices='" + nameServices + '\'' +
-            ", areUse='" + areUse + '\'' +
-            ", rentPrice='" + rentPrice + '\'' +
-            ", maxNumberOfPeople='" + maxNumberOfPeople + '\'' +
-            ", rentalType='" + rentalType + '\'' +
-            '}';
-  }
-  public abstract void showInfor();
+//  @Override
+//  public String toString() {
+//    return "Services{" +
+//            "id='" + id + '\'' +
+//            ", nameServices='" + nameServices + '\'' +
+//            ", areUse='" + areUse + '\'' +
+//            ", rentPrice='" + rentPrice + '\'' +
+//            ", maxNumberOfPeople='" + maxNumberOfPeople + '\'' +
+//            ", rentalType='" + rentalType + '\'' +
+//            '}';
+//  }
+  public abstract void showInfo();
 }
