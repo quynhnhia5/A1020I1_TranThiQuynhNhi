@@ -87,13 +87,13 @@ public class ServicesManager {
           RoomManager.showRoom();
           break;
         case 4:
-
+          VillaManager.showNameVillaNotDuplicate();
           break;
         case 5:
-
+          HouseManager.showNameHouseNotDup();
           break;
         case 6:
-
+          RoomManager.showNameRoomNotDup();
           break;
         case 7:
           displayMainMenu();

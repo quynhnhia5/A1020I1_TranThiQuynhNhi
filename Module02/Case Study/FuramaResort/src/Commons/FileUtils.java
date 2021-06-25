@@ -1,8 +1,6 @@
 package Commons;
 
-import Models.House;
-import Models.Room;
-import Models.Villa;
+import Models.*;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -59,7 +57,7 @@ public class FileUtils {
     try {
       String line;
       lineReader = new BufferedReader
-              (new FileReader("src\\A1020I1_DangVanThuan_CaseStudy\\Data\\Villa.csv"));
+              (new FileReader("src//Data//Villa.csv"));
       while ((line = lineReader.readLine()) != null) {
         String[] splitData = line.split(",");
         if (splitData[0].equals("id")) {
@@ -166,4 +164,83 @@ public class FileUtils {
     }
     return listRoom;
   }
+  public static ArrayList<Customer> CSVToListCustomer() {
+    BufferedReader lineReader = null;
+    ArrayList<Customer> listCustomer = new ArrayList<Customer>();
+
+    try {
+      String line;
+      lineReader = new BufferedReader
+              (new FileReader("D:\\Codegym\\A1020I1_TranThiQuynhNhi\\Module02\\Case Study\\FuramaResort\\src\\Data\\Customer.csv"));
+      while ((line = lineReader.readLine()) != null) {
+        String[] splitData = line.split(",");
+        if (splitData[0].equals("id")) {
+          continue;
+        }
+
+        Customer customer=new Customer();
+        customer.setNameCustomer(splitData[0]);
+        customer.setDateOfBirth(splitData[1]);
+        customer.setGender(splitData[2]);
+        customer.setIdCard(splitData[3]);
+        customer.setPhoneNumber(splitData[4]);
+        customer.setEmail(splitData[5]);
+        customer.setTypeClient(splitData[6]);
+        customer.setAddress(splitData[7]);
+        customer.setServices(splitData[8]);
+        listCustomer.add(customer);
+      }
+    } catch (Exception exception) {
+      exception.printStackTrace();
+    } finally {
+      try {
+        lineReader.close();
+      } catch (Exception exception) {
+        exception.printStackTrace();
+      }
+
+    }
+    return listCustomer;
+  }
+
+  public static ArrayList<Employee> CSVToListEmployee() {
+    BufferedReader lineReader = null;
+    ArrayList<Employee> listEmploy = new ArrayList<Employee>();
+
+    try {
+      String line;
+      lineReader = new BufferedReader
+              (new FileReader("D:\\Codegym\\A1020I1_TranThiQuynhNhi\\Module02\\Case Study\\FuramaResort\\src\\Data\\Employee.csv"));
+      while ((line = lineReader.readLine()) != null) {
+        String[] splitData = line.split(",");
+        if (splitData[0].equals("id")) {
+          continue;
+        }
+        Employee employee = new Employee();
+
+
+        employee.setIdEmploy(splitData[0]);
+        employee.setNameEmploy(splitData[1]);
+        employee.setDateEmploy(splitData[2]);
+        employee.setIdCardEmploy(splitData[3]);
+        employee.setPhoneNumberEmploy(splitData[4]);
+        employee.setEmailEmploy(splitData[5]);
+        employee.setLevelEmploy(splitData[6]);
+        employee.setPositionEmploy(splitData[7]);
+        employee.setSalaryEmploy(splitData[8]);
+        listEmploy.add(employee);
+      }
+    } catch (Exception exception) {
+      exception.printStackTrace();
+    } finally {
+      try {
+        lineReader.close();
+      } catch (Exception exception) {
+        exception.printStackTrace();
+      }
+
+    }
+    return listEmploy;
+  }
+
 }

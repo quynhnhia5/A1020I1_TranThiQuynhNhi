@@ -6,9 +6,7 @@ import Models.House;
 import Commons.check.CheckService;
 import org.omg.CORBA.PUBLIC_MEMBER;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class HouseManager {
   public static final String FILE_HOUSE="D:\\Codegym\\A1020I1_TranThiQuynhNhi\\Module02\\Case Study\\FuramaResort\\src\\Data\\House.csv";
@@ -22,50 +20,31 @@ public class HouseManager {
     Validate validate=new Validate();
 
     System.out.print("Nhap ID House: ");
-    String idHouse = scanner.nextLine();
-    validate.inputID(idHouse);
+    String idHouse = validate.inputID();
 
     System.out.print("Nhap ten House: ");
-    String nameHouse = scanner.nextLine();
-    validate.inputName(nameHouse);
-
+    String nameHouse = validate.inputName();
 
     System.out.print("Nhap dien tich su dung: ");
-    String areaUseHouse = scanner.nextLine();
-    validate.inputArea(areaUseHouse);
-
-
+    String areaUseHouse = validate.inputArea();
 
     System.out.print("Nhap chi phi thue: ");
-    String rentPriceHouse = scanner.nextLine();
-    validate.inputRentPrice(rentPriceHouse);
-
+    String rentPriceHouse = validate.inputRentPrice();
 
     System.out.print("Nhap so luong nguoi toi da: ");
-    String maxNumberOfPeople = scanner.nextLine();
-    validate.inputMaxNumber(maxNumberOfPeople);
-
-
+    String maxNumberOfPeople = validate.inputMaxNumber();
 
     System.out.print("Nhap kieu thue (Theu theo nam thang hoac gio): ");
-    String typeRentHouse = scanner.nextLine();
-    validate.inputTypeRen(typeRentHouse);
-    while (!CheckService.checkTypeRen(typeRentHouse)) {
-      System.err.println("Invalid!!! please Input again!!!");
-      typeRentHouse = scanner.nextLine();
-    }
+    String typeRentHouse = validate.inputTypeRen();
 
     System.out.print("Nhap tieu chuan phong: ");
-    String standardRoomHouse = scanner.nextLine();
-    validate.inputtandardRoom(standardRoomHouse);
-
+    String standardRoomHouse = validate.inputtandardRoom();
 
     System.out.print("Nhap mo ta tien nghi khac: ");
     String describeConvenient = scanner.nextLine();
 
     System.out.print("Nhap so tang: ");
-    String numberOfFloorsHouse = scanner.nextLine();
-    validate.inputNumberOfFloor(numberOfFloorsHouse);
+    String numberOfFloorsHouse =validate.inputNumberOfFloor();
 
     House house=new House(idHouse,nameHouse,areaUseHouse,
             rentPriceHouse,maxNumberOfPeople,typeRentHouse,
@@ -83,6 +62,20 @@ public class HouseManager {
   public static void showHouse(){
     for (House house : listHouse) {
       house.showInfo();
+    }
+  }
+
+  public static void showNameHouseNotDup(){
+    Set<String> nameHouseNotDup=new TreeSet<>();
+    List<House> houseList=new ArrayList<>();
+    houseList=FileUtils.CSVToListHouse();
+    for (int i = 0; i < houseList.size(); i++) {
+      nameHouseNotDup.add(houseList.get(i).getNameServices());
+    }
+    System.out.println("Danh sach cac ten House khong trung nhau: ");
+    for (String s : nameHouseNotDup) {
+      System.out.println(s);
+
     }
   }
 }

@@ -1,17 +1,20 @@
 package Commons;
 
+import Commons.check.CheckCustomer;
+import Commons.check.CheckEmployee;
 import Commons.check.CheckService;
+import org.omg.CORBA.TRANSACTION_UNAVAILABLE;
 
 import java.util.Scanner;
 
 public class Validate {
   Scanner scanner = new Scanner(System.in);
-  boolean check=true;
 
-  public String inputID(String id) {
- //boolean check=true;
+  public String inputID() {
     do {
       try {
+        String id = scanner.nextLine();
+
         if (CheckService.checkID(id)) {
           return id;
         } else {
@@ -20,34 +23,31 @@ public class Validate {
       } catch (Exception e) {
         System.out.println(e.getMessage());
         System.out.print("Nhap lai ID theo dung format SVXX-YYYY: ");
-        id=scanner.nextLine();
       }
-    }while (check);
-    return null;
+    }while (true);
   }
 
-  public String inputName(String name) {
- //boolean check=true;
+  public String inputName(){
     do {
       try {
-        if (CheckService.checkName(name)) {
+        String name = scanner.nextLine();
+
+        if (CheckService.checkName(name)){
           return name;
-        } else {
-          throw new Exception("Name sai format");
+        }else {
+          throw new Exception("Nhap ten sai format");
         }
-      } catch (Exception e) {
+      }catch (Exception e){
         System.out.println(e.getMessage());
         System.out.print("Nhap lai ten: ");
-        name=scanner.nextLine();
       }
-    }while (check);
-    return null;
+    }while (true);
   }
 
-  public String inputArea(String area) {
-   boolean check=true;
+  public String inputArea() {
     do {
       try {
+        String area=scanner.nextLine();
         if (CheckService.checkArea(area)) {
           return area;
         } else {
@@ -56,17 +56,15 @@ public class Validate {
       } catch (Exception e) {
         System.out.println(e.getMessage());
         System.out.print("Nhap lai Dien tich phai >30m2: ");
-        area=scanner.nextLine();
 
       }
-    }while (check);
-    return null;
+    }while (true);
   }
 
-  public String inputRentPrice(String rentPrice) {
-    boolean check=true;
+  public String inputRentPrice() {
     do {
       try {
+        String rentPrice=scanner.nextLine();
         if (CheckService.checkrentPrice(rentPrice)) {
           return rentPrice;
         } else {
@@ -75,17 +73,14 @@ public class Validate {
       } catch (Exception e) {
         System.out.println(e.getMessage());
         System.out.print("Nhap lai Chi phi thue phai la so duong: ");
-        rentPrice=scanner.nextLine();
-
       }
-    }while (check);
-    return null;
+    }while (true);
   }
 
-  public String inputMaxNumber(String maxNumber) {
-    boolean check=true;
+  public String inputMaxNumber() {
     do {
       try {
+        String maxNumber=scanner.nextLine();
         if (CheckService.checkMaxNumber(maxNumber)) {
           return maxNumber;
         } else {
@@ -94,16 +89,14 @@ public class Validate {
       } catch (Exception e) {
         System.out.println(e.getMessage());
         System.out.print("Nhap lai So luong nguoi toi da(>0 va <20): ");
-        maxNumber=scanner.nextLine();
       }
-    }while (check);
-    return null;
+    }while (true);
   }
 
-  public String inputAccompanied(String accompanied) {
-    boolean check=true;
+  public String inputAccompanied() {
     do {
       try {
+        String accompanied=scanner.nextLine();
         if (CheckService.checkAccompanied(accompanied)) {
           return accompanied;
         } else {
@@ -112,16 +105,14 @@ public class Validate {
       } catch (Exception e) {
         System.out.println(e.getMessage());
         System.out.print("Nhap lai Dich vu di kem(massage, karaoke, food, drink, car): ");
-        accompanied=scanner.nextLine();
       }
-    }while (check);
-    return null;
+    }while (true);
   }
 
-  public String inputNumberOfFloor(String numberofFloor) {
-    boolean check=true;
+  public String inputNumberOfFloor() {
     do {
       try {
+        String numberofFloor=scanner.nextLine();
         if (CheckService.checkNumberOfFloor(numberofFloor)) {
           return numberofFloor;
         } else {
@@ -130,16 +121,14 @@ public class Validate {
       } catch (Exception e) {
         System.out.println(e.getMessage());
         System.out.print("Nhap lai So tang: ");
-        numberofFloor=scanner.nextLine();
       }
-    }while (check);
-    return null;
+    }while (true);
   }
 
-  public String inputTypeRen(String typeRen) {
-    boolean check=true;
+  public String inputTypeRen() {
     do {
       try {
+        String typeRen=scanner.nextLine();
         if (CheckService.checkTypeRen(typeRen)) {
           return typeRen;
         } else {
@@ -148,16 +137,14 @@ public class Validate {
       } catch (Exception e) {
         System.out.println(e.getMessage());
         System.out.print("Nhap lai Kieu thue: ");
-        typeRen=scanner.nextLine();
       }
-    }while (check);
-    return null;
+    }while (true);
   }
 
-  public String inputtandardRoom(String standard) {
-    boolean check=true;
+  public String inputtandardRoom() {
     do {
       try {
+        String standard=scanner.nextLine();
         if (CheckService.checkStandardRoom(standard)) {
           return standard;
         } else {
@@ -166,9 +153,94 @@ public class Validate {
       } catch (Exception e) {
         System.out.println(e.getMessage());
         System.out.print("Nhap lai Tieu chuan phong: ");
-        standard=scanner.nextLine();
       }
-    }while (check);
-    return null;
+    }while (true);
   }
+
+  public String inputNameCus(){
+    do{
+      try {
+        String name=scanner.nextLine();
+        if (CheckCustomer.checkName(name)) {
+          return name;
+        } else {
+          throw new Exception("Nhap sai format");
+        }
+      }catch (Exception e) {
+        System.out.println(e.getMessage());
+          System.out.print("Nhap lai ten (in hoa ki tu dau tien): ");
+        }
+
+    }while (true);
+  }
+
+  public String inputEmail(){
+    do {
+      try {
+        String email=scanner.nextLine();
+        if(CheckCustomer.checkEmail(email)){
+          return email;
+        }else {
+          throw new Exception("Nhap sai format");
+        }
+      }catch (Exception e){
+        System.out.println(e.getMessage());
+        System.out.print("Nhap lai email (theo dung dinh dang abc@abc.abc): ");
+      }
+
+    }while (true);
+  }
+  public String inputGender(){
+    do {
+      try {
+        String gender=scanner.nextLine();
+        if(CheckCustomer.checkGender(gender)){
+          return gender;
+        }else {
+          throw new Exception("Nhap sai format");
+        }
+      }catch (Exception e){
+        System.out.println(e.getMessage());
+        System.out.print("Nhap lai Gender (Male, Female hoặc Unknow): ");
+      }
+
+    }while (true);
+  }
+
+  public String inputDateOfBirth(){
+    do {
+      try {
+        String dateOfBirth=scanner.nextLine();
+        if(CheckCustomer.checkDateOfBirth(dateOfBirth)){
+          return dateOfBirth;
+        }else {
+          throw new Exception("Nhap sai format");
+        }
+      }catch (Exception e){
+        System.out.println(e.getMessage());
+        System.out.print("Nhap lai dateOfBirth (Nam sinh phai >1900 và nho hơn ngay hien tai 18 nam): ");
+      }
+
+    }while (true);
+  }
+
+  public String inputIdCard(){
+    do {
+      try {
+        String idCard=scanner.nextLine();
+        if(CheckCustomer.checkIdCard(idCard)){
+          return idCard;
+        }else {
+          throw new Exception("Nhap sai format");
+        }
+      }catch (Exception e){
+        System.out.println(e.getMessage());
+        System.out.print("Nhap lai idCard (Phai co 9 so và theo dung dinh dang XXX XXX XXX : ");
+      }
+
+    }while (true);
+  }
+
+
+
 }

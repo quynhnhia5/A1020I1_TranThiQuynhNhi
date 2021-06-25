@@ -1,5 +1,9 @@
 package Controllers;
 
+import Models.Customer;
+import manager.BookingManager;
+import manager.CustomerManager;
+import manager.EmployManager;
 import manager.ServicesManager;
 
 import java.util.Scanner;
@@ -28,23 +32,21 @@ public class MainController {
           ServicesManager.showServices();
           break;
         case 3:
-
+          CustomerManager.addNewCustomer();
           break;
         case 4:
+          CustomerManager.showInformationCustomers();
           break;
-
         case 5:
+          BookingManager.addNewBook();
           break;
         case 6:
+          EmployManager.showEmp();
           break;
 
       }
 
     } while (check);
-  }
-
-  public static void main(String[] args) {
-    displayMainMenu();
   }
 
 
