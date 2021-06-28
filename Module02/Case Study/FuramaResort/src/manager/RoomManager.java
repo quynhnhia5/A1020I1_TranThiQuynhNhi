@@ -3,15 +3,14 @@ package manager;
 import Commons.FileUtils;
 import Commons.Validate;
 import Models.Room;
-import org.omg.CORBA.PUBLIC_MEMBER;
 
+import javax.swing.*;
 import java.util.*;
 
 public class RoomManager {
   public static final String FILE_ROOM = "D:\\Codegym\\A1020I1_TranThiQuynhNhi\\Module02\\Case Study\\FuramaResort\\src\\Data\\Room.csv";
   //"src//data//Room.csv"
   public static final String COMMA = " , ";
-  public static List<Room> listRoom = new ArrayList<>();
 
   public static void addNewRoom() {
 
@@ -33,7 +32,7 @@ public class RoomManager {
     System.out.print("Nhap so luong nguoi toi da: ");
     String maxNumberOfPeople = validate.inputMaxNumber();
 
-    System.out.print("Nhap kieu thue (Theu theo nam thang hoac gio): ");
+    System.out.print("Nhap kieu thue (Theo theo nam thang hoac gio): ");
     String typeRentRoom = validate.inputTypeRen();
 
     System.out.print("Nhap dich vu di kem: ");
@@ -42,22 +41,22 @@ public class RoomManager {
     Room room = new Room(idRoom, nameRoom, areaUseRoom, rentPriceRoom,
             maxNumberOfPeople, typeRentRoom, accompaniedService);
 
-    listRoom.add(room);
-
     String lineRoom;
     lineRoom = room.getId() + COMMA + room.getNameServices() + COMMA
             + room.getAreaUse() + COMMA + room.getRentPrice() + COMMA
             + room.getMaxNumberOfPeople() + COMMA + room.getRentalType() + COMMA
             + room.getAccompaniedService();
-    FileUtils.witerFile(FILE_ROOM, lineRoom);
+    FileUtils.writeFile(FILE_ROOM, lineRoom);
 
 
   }
 
   public static void showRoom() {
+    List<Room> listRoom = FileUtils.CSVToListRoom();
     for (Room room : listRoom) {
       room.showInfo();
     }
+    System.out.println();
   }
 
   public static void showNameRoomNotDup() {

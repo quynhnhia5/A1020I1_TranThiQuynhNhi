@@ -4,7 +4,6 @@ import Commons.FileUtils;
 import Commons.Validate;
 import Models.Customer;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -24,7 +23,7 @@ public class CustomerManager {
     Validate validate=new Validate();
 
     System.out.print("Nhap ten Customer: ");
-    String nameCustomer=validate.inputName();
+    String nameCustomer=validate.inputNameCus();
 
     System.out.print("Nhap Ngay sinh: ");
     String dateOfBirth=scanner.nextLine();
@@ -51,15 +50,15 @@ public class CustomerManager {
     System.out.print("Su dung dich vu: ");
     String service=scanner.nextLine();
 
-   Customer customer=new Customer(nameCustomer,dateOfBirth,gender,idCard,phoneNumber,email,typeClient,address,service);
+   Customer customer=new Customer(nameCustomer,dateOfBirth,gender,idCard,phoneNumber,email,typeClient,address);
    listCustomer.add(customer);
 
    String lineCustomer;
    lineCustomer=customer.getNameCustomer()+COMMA+customer.getDateOfBirth()+COMMA
            +customer.getGender()+COMMA+customer.getIdCard()+COMMA+customer.getPhoneNumber()+COMMA
            +customer.getEmail()+COMMA+customer.getTypeClient()+COMMA
-           +customer.getAddress()+COMMA+customer.getServices();
-    FileUtils.witerFile(FILE_CUSTOMER,lineCustomer);
+           +customer.getAddress();
+    FileUtils.writeFile(FILE_CUSTOMER,lineCustomer);
   }
 
   public static void showInformationCustomers(){

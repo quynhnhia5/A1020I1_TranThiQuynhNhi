@@ -10,12 +10,12 @@ public class Customer implements Comparable<Customer> {
   private String email;
   private String typeClient;
   private String address;
-  private String Services;
+
 
   public Customer() {
   }
 
-  public Customer(String nameCustomer, String dateOfBirth, String gender, String idCard, String phoneNumber, String email, String typeClient, String address, String services) {
+  public Customer(String nameCustomer, String dateOfBirth, String gender, String idCard, String phoneNumber, String email, String typeClient, String address) {
     this.nameCustomer = nameCustomer;
     this.dateOfBirth = dateOfBirth;
     this.gender = gender;
@@ -24,7 +24,7 @@ public class Customer implements Comparable<Customer> {
     this.email = email;
     this.typeClient = typeClient;
     this.address = address;
-    Services = services;
+
   }
 
   public String getNameCustomer() {
@@ -91,13 +91,6 @@ public class Customer implements Comparable<Customer> {
     this.address = address;
   }
 
-  public String getServices() {
-    return Services;
-  }
-
-  public void setServices(String services) {
-    Services = services;
-  }
 
   public void showInfor() {
     System.out.println( "Customer{" +
@@ -109,7 +102,6 @@ public class Customer implements Comparable<Customer> {
             ", email='" + email + '\'' +
             ", typeClient='" + typeClient + '\'' +
             ", address='" + address + '\'' +
-            ", Services='" + Services + '\'' +
             '}');
   }
 

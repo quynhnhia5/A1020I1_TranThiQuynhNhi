@@ -25,19 +25,19 @@ public class ServicesManager {
       switch (choice) {
         case 1:
           VillaManager.addNewVilla();
-          System.out.println("Thêm thành công Villa, Enter để tiếp tục!!!");
+          System.out.println("Thêm thành công Villa");
           scanner.nextLine();
           displayMainMenu();
           break;
         case 2:
           HouseManager.addNewHouse();
-          System.out.println("Thêm thành công House, Enter để tiếp tục!!!");
+          System.out.println("Thêm thành công House");
           scanner.nextLine();
           displayMainMenu();
           break;
         case 3:
           RoomManager.addNewRoom();
-          System.out.println("Thêm thành công Room, Enter để tiếp tục!!!");
+          System.out.println("Thêm thành công Room");
           scanner.nextLine();
           displayMainMenu();
           break;
@@ -57,9 +57,7 @@ public class ServicesManager {
   }
 
   public static void showServices() {
-
     Scanner scanner = new Scanner(System.in);
-    boolean check = true;
 
     do {
 
@@ -99,7 +97,7 @@ public class ServicesManager {
           displayMainMenu();
           break;
         case 8:
-          check = false;
+          System.exit(0);
           break;
         default:
           System.out.println("Fail!!! Please choose again, Enter to continue");
@@ -107,7 +105,7 @@ public class ServicesManager {
           showServices();
       }
 
-    } while (check);
+    } while (true);
 
   }
 

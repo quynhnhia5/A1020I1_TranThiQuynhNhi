@@ -3,7 +3,6 @@ package manager;
 import Commons.FileUtils;
 import Commons.Validate;
 import Models.Villa;
-import sun.management.snmp.jvminstr.JvmRTInputArgsEntryImpl;
 
 import java.util.*;
 
@@ -11,7 +10,7 @@ public class VillaManager {
 public static final String FILE_VILA="D:\\Codegym\\A1020I1_TranThiQuynhNhi\\Module02\\Case Study\\FuramaResort\\src\\Data\\Villa.csv";
   public static final String COMMA = " , ";
 
-  public static List<Villa> listVilla = new ArrayList<>();
+
 
   public static void addNewVilla() {
 
@@ -52,7 +51,7 @@ public static final String FILE_VILA="D:\\Codegym\\A1020I1_TranThiQuynhNhi\\Modu
     String numberOfFloorsVilla = validate.inputNumberOfFloor();
 
     Villa villa = new Villa(idVilla, nameVilla, areaUseVilla, rentPriceVilla, maxNumberOfPeople, typeRentVilla, standardRoomVilla, describeConvenient, areaPoolVilla, numberOfFloorsVilla);
-    listVilla.add(villa);
+
 
     String line;
     line = villa.getId() + COMMA + villa.getNameServices() + COMMA
@@ -61,11 +60,11 @@ public static final String FILE_VILA="D:\\Codegym\\A1020I1_TranThiQuynhNhi\\Modu
             + villa.getStandardRoom() + COMMA + villa.getDescribeConvenient() + COMMA
             + villa.getAreaPool() + COMMA + villa.getNumberOfFloors();
 
-    FileUtils.witerFile(FILE_VILA,line);
+    FileUtils.writeFile(FILE_VILA,line);
   }
 
   public static void showVilla() {
-
+   List<Villa> listVilla=FileUtils.CSVToListVilla();
     for (Villa villa : listVilla) {
       villa.showInfo();
 
@@ -76,6 +75,7 @@ public static final String FILE_VILA="D:\\Codegym\\A1020I1_TranThiQuynhNhi\\Modu
   public static void showNameVillaNotDuplicate(){
     Set <String> listVillaNotDup=new TreeSet<String>();
     List<Villa> villaList=FileUtils.CSVToListVilla();
+
     for (int i = 0; i < villaList.size(); i++) {
       listVillaNotDup.add(villaList.get(i).getNameServices());
     }

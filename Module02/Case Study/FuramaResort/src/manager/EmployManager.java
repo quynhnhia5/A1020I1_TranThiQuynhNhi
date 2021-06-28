@@ -4,7 +4,6 @@ import Commons.FileUtils;
 import Commons.Validate;
 import Models.Employee;
 
-import java.security.KeyStore;
 import java.util.*;
 
 public class EmployManager {
@@ -57,7 +56,7 @@ public class EmployManager {
             +employee.getPhoneNumberEmploy()+COMMA+employee.getEmailEmploy()+COMMA
             +employee.getLevelEmploy()+COMMA+employee.getPositionEmploy()+COMMA
             +employee.getSalaryEmploy();
-    FileUtils.witerFile(FILE_EMPLOY,lineEmp);
+    FileUtils.writeFile(FILE_EMPLOY,lineEmp);
 
 
 

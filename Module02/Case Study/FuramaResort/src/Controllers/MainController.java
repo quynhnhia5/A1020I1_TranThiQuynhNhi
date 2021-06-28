@@ -43,11 +43,14 @@ public class MainController {
         case 6:
           EmployManager.showEmp();
           break;
-
+        default:
+          return;
       }
 
     } while (check);
   }
 
-
+  public void exit(){
+    System.exit(0);
+  }
 }

@@ -8,9 +8,9 @@ public class Room extends Services {
   public Room() {
   }
 
-  public Room(String id, String nameServices, String areaUse, String rentPrice, String maxNumberOfPeople, String rentalType, String freeService) {
+  public Room(String id, String nameServices, String areaUse, String rentPrice, String maxNumberOfPeople, String rentalType, String accompaniedService) {
     super(id, nameServices, areaUse, rentPrice, maxNumberOfPeople, rentalType);
-    accompaniedService = accompaniedService;
+    this.accompaniedService = accompaniedService;
   }
 
   public String getAccompaniedService() {
@@ -23,14 +23,13 @@ public class Room extends Services {
 
   @Override
   public void showInfo() {
-    System.out.println("Services{" +
-            "id='" + getId() + '\'' +
-            ", nameServices='" + getNameServices() + '\'' +
-            ", areUse='" + getAreaUse() + '\'' +
-            ", rentPrice='" + getRentPrice() + '\'' +
-            ", maxNumberOfPeople='" + getMaxNumberOfPeople() + '\'' +
-            ", rentalType='" + getRentalType() + '\'' +
-            ", accompaniedService='" + accompaniedService + '\'' +
-            '}');
+    System.out.printf("%s\t%s\t%s\t%s\t%s\t%s\t%s\n",
+            getId(),
+            getNameServices(),
+            getAreaUse(),
+            getRentPrice(),
+            getMaxNumberOfPeople(),
+            getRentalType(),
+            getAccompaniedService());
   }
 }

@@ -3,7 +3,7 @@ package Commons.check;
 public class CheckService {
   private static final String ID_REGEX  = "^SV([VL]{2}|[HO]{2}|[RO]{2})-[\\d]{4}$";
   private static final String Name_REGEX = "^[A-Z][a-z\\s]*";
-  private static final String Area_REGEX = "^[3-9][\\d]+([,][\\d]+)$";
+  private static final double min_Area = 30;
   private static final String rentPrice_REGEX = "^[\\d]*";
   private static final String maxNumber_REGEX = "^[1-9]|([1][\\d])$";
   private static final String Accompanied_REGEX = "^(massage|karaoke|food|drink|car)$";
@@ -20,8 +20,8 @@ public class CheckService {
     return strName.matches(Name_REGEX);
   }
 
-  public static boolean checkArea(String strArea) {
-    return strArea.matches(Area_REGEX);
+  public static boolean checkArea(double strArea) {
+    return strArea > 30;
   }
 
   public static boolean checkrentPrice(String strrentPrice) {

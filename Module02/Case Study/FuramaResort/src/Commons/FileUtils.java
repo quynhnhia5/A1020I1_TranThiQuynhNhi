@@ -8,19 +8,40 @@ import java.util.List;
 
 public class FileUtils {
 
-//  public static final String LINE_VILLA = "id, nameServices, areaUse, rentPrice, maxNumberOfPeople, " +
-//          "typeRent, standardRoom, describeConvenient, areaPool, numberOfFloors " + "\n";
-//  public static final String LINE_HOUSE = "id, nameServices, areaUse, rentPrice, maxNumberOfPeople, " +
-//          "typeRent, standardRoom, describeConvenient, numberOfFloors " + "/n";
-//  public static final String LINE_ROOM="id, nameServices, areaUse, rentPrice, maxNumberOfPeople, " +
-//          "typeRent, accompaniedService " + "/n";
+  public static final String LINE_VILLA = "id, nameServices, areaUse, rentPrice, maxNumberOfPeople, " +
+          "typeRent, standardRoom, describeConvenient, areaPool, numberOfFloors " + "\n";
+  public static final String LINE_HOUSE = "id, nameServices, areaUse, rentPrice, maxNumberOfPeople, " +
+          "typeRent, standardRoom, describeConvenient, numberOfFloors " + "\n";
+  public static final String LINE_ROOM = "id, nameServices, areaUse, rentPrice, maxNumberOfPeople, " +
+          "typeRent, accompaniedService " + "\n";
+  public static final String LINE_BOOKING = "idCardCus,nameCus,idService,nameService\n";
+  public static final String LINE_CUSTOMER = "nameCustomer,dateOfBirth,gender,idCard,phoneNumber,email,typeClient,address\n";
 
-  public static void witerFile(String pathFile, String line) {
+  public static void writeFile(String pathFile, String line) {
     try {
-      List<String> str = readFile(pathFile);
-
       FileWriter fileWriter = new FileWriter(pathFile, true);
       BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+      List<String> str = readFile(pathFile);
+      if (str.isEmpty()) {
+
+        switch (pathFile) {
+          case "D:\\Codegym\\A1020I1_TranThiQuynhNhi\\Module02\\Case Study\\FuramaResort\\src\\Data\\Villa.csv":
+            bufferedWriter.write(LINE_VILLA);
+            break;
+          case "D:\\Codegym\\A1020I1_TranThiQuynhNhi\\Module02\\Case Study\\FuramaResort\\src\\Data\\House.csv":
+            bufferedWriter.write(LINE_HOUSE);
+            break;
+          case "D:\\Codegym\\A1020I1_TranThiQuynhNhi\\Module02\\Case Study\\FuramaResort\\src\\Data\\Room.csv":
+            bufferedWriter.write(LINE_ROOM);
+            break;
+          case "D:\\Codegym\\A1020I1_TranThiQuynhNhi\\Module02\\Case Study\\FuramaResort\\src\\Data\\Customer.csv":
+            bufferedWriter.write(LINE_CUSTOMER);
+            break;
+          default:
+            bufferedWriter.write(LINE_BOOKING);
+            break;
+        }
+      }
 
       bufferedWriter.write(line);
       bufferedWriter.newLine();
@@ -57,9 +78,10 @@ public class FileUtils {
     try {
       String line;
       lineReader = new BufferedReader
-              (new FileReader("src//Data//Villa.csv"));
+              (new FileReader("D:\\Codegym\\A1020I1_TranThiQuynhNhi\\Module02\\Case Study\\FuramaResort\\src\\Data\\Villa.csv"));
+      lineReader.readLine(); //chỗ này sẽ đọc mất cái header
       while ((line = lineReader.readLine()) != null) {
-        String[] splitData = line.split(",");
+        String[] splitData = line.split(" , ");
         if (splitData[0].equals("id")) {
           continue;
         }
@@ -97,8 +119,9 @@ public class FileUtils {
       String line;
       lineReader = new BufferedReader
               (new FileReader("D:\\Codegym\\A1020I1_TranThiQuynhNhi\\Module02\\Case Study\\FuramaResort\\src\\Data\\House.csv"));
+      lineReader.readLine();
       while ((line = lineReader.readLine()) != null) {
-        String[] splitData = line.split(",");
+        String[] splitData = line.split(" , ");
         if (splitData[0].equals("id")) {
           continue;
         }
@@ -136,8 +159,10 @@ public class FileUtils {
       String line;
       lineReader = new BufferedReader
               (new FileReader("D:\\Codegym\\A1020I1_TranThiQuynhNhi\\Module02\\Case Study\\FuramaResort\\src\\Data\\Room.csv"));
+      lineReader.readLine();
+
       while ((line = lineReader.readLine()) != null) {
-        String[] splitData = line.split(",");
+        String[] splitData = line.split(" , ");
         if (splitData[0].equals("id")) {
           continue;
         }
@@ -164,6 +189,7 @@ public class FileUtils {
     }
     return listRoom;
   }
+
   public static ArrayList<Customer> CSVToListCustomer() {
     BufferedReader lineReader = null;
     ArrayList<Customer> listCustomer = new ArrayList<Customer>();
@@ -172,13 +198,14 @@ public class FileUtils {
       String line;
       lineReader = new BufferedReader
               (new FileReader("D:\\Codegym\\A1020I1_TranThiQuynhNhi\\Module02\\Case Study\\FuramaResort\\src\\Data\\Customer.csv"));
+      lineReader.readLine();
       while ((line = lineReader.readLine()) != null) {
-        String[] splitData = line.split(",");
+        String[] splitData = line.split(" , ");
         if (splitData[0].equals("id")) {
           continue;
         }
 
-        Customer customer=new Customer();
+        Customer customer = new Customer();
         customer.setNameCustomer(splitData[0]);
         customer.setDateOfBirth(splitData[1]);
         customer.setGender(splitData[2]);
@@ -187,7 +214,6 @@ public class FileUtils {
         customer.setEmail(splitData[5]);
         customer.setTypeClient(splitData[6]);
         customer.setAddress(splitData[7]);
-        customer.setServices(splitData[8]);
         listCustomer.add(customer);
       }
     } catch (Exception exception) {

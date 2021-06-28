@@ -3,15 +3,12 @@ package manager;
 import Commons.FileUtils;
 import Commons.Validate;
 import Models.House;
-import Commons.check.CheckService;
-import org.omg.CORBA.PUBLIC_MEMBER;
 
 import java.util.*;
 
 public class HouseManager {
   public static final String FILE_HOUSE="D:\\Codegym\\A1020I1_TranThiQuynhNhi\\Module02\\Case Study\\FuramaResort\\src\\Data\\House.csv";
   public static final String COMMA= " , ";
-  public static List<House> listHouse = new ArrayList<>();
 
 
   public static void addNewHouse() {
@@ -50,16 +47,17 @@ public class HouseManager {
             rentPriceHouse,maxNumberOfPeople,typeRentHouse,
             standardRoomHouse,describeConvenient,numberOfFloorsHouse);
 
-    listHouse.add(house);
+
     String lineHouse=house.getId()+COMMA+house.getNameServices()+COMMA
             +house.getAreaUse()+COMMA+house.getRentPrice()+COMMA
             +house.getMaxNumberOfPeople()+COMMA +house.getRentalType()+COMMA
             +house.getStandardRoom()+COMMA+house.getDescribeConvenient()+COMMA
             +house.getNumberOfFloors();
-    FileUtils.witerFile(FILE_HOUSE,lineHouse);
+    FileUtils.writeFile(FILE_HOUSE,lineHouse);
   }
 
   public static void showHouse(){
+    List<House> listHouse=FileUtils.CSVToListHouse();
     for (House house : listHouse) {
       house.showInfo();
     }

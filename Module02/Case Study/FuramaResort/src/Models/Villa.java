@@ -56,18 +56,18 @@ public class Villa extends Services {
   @Override
   public void showInfo() {
 
-    System.out.println("Services{" +
-            "id='" + getId() + '\'' +
-            ", nameServices='" + getNameServices() + '\'' +
-            ", areaUse='" + getAreaUse() + '\'' +
-            ", rentPrice='" + getRentPrice() + '\'' +
-            ", maxNumberOfPeople='" + getMaxNumberOfPeople() + '\'' +
-            ", rentalType='" + getRentalType() + '\'' +
-            ", standardRoom='" + standardRoom + '\'' +
-            ", describeConvenient='" + describeConvenient + '\'' +
-            ", areaPool='" + areaPool + '\'' +
-            ", numberOfFloors='" + numberOfFloors + '\'' +
-            '}');
+    System.out.printf("%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n",
+            getId(),
+            getNameServices(),
+            getAreaUse(),
+            getRentPrice(),
+            getMaxNumberOfPeople(),
+            getRentalType(),
+            getStandardRoom(),
+            getDescribeConvenient(),
+            getAreaPool(),
+            getNumberOfFloors()
+    );
   }
 
 }
