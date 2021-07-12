@@ -1,6 +1,7 @@
 package manager;
 
 import Models.Villa;
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 
 import java.util.Scanner;
 
@@ -107,6 +108,80 @@ public class ServicesManager {
 
     } while (true);
 
+  }
+
+  public static void search() {
+    Scanner scanner = new Scanner(System.in);
+    do {
+      System.out.println("-----Menu Services--------");
+      System.out.println("1.Search Villa\n" +
+              "2.Search House\n" +
+              "3.Search Room\n" +
+              "4.Back to menu\n" +
+              "5.Exit");
+      System.out.print("Chon chuc nang ban muon thuc hien: ");
+      int choice = scanner.nextInt();
+      switch (choice) {
+        case 1:
+          VillaManager.searchVilla().showInfo();
+          break;
+        case 2:
+          HouseManager.searchHouse().showInfo();
+          break;
+        case 3:
+          RoomManager.searchRoom().showInfo();
+          break;
+        case 4:
+          displayMainMenu();
+          break;
+        case 5:
+          System.exit(0);
+          break;
+        default:
+          System.out.println("Fail!!! Please choose again, Enter to continue");
+          scanner.nextLine();
+          search();
+
+      }
+
+
+    } while (true);
+  }
+  public static void deleteServices() {
+    Scanner scanner = new Scanner(System.in);
+
+    do {
+      System.out.println("--------Menu Services-------");
+
+      System.out.println("1.Delete Villa\n" +
+              "2.Delete House\n" +
+              "3.Delete Room\n" +
+              "4.Back to menu\n" +
+              "5.Exit");
+      System.out.print("Chon chu nang muon thuc hien: ");
+      int choice = scanner.nextInt();
+      switch (choice) {
+        case 1:
+VillaManager.deleteVilla();
+          break;
+        case 2:
+HouseManager.deleteHouse();
+          break;
+        case 3:
+          RoomManager.deleteRoom().showInfo();
+          break;
+        case 4:
+displayMainMenu();
+          break;
+        case 5:
+          System.exit(0);
+          break;
+        default:
+          System.out.println("Fail!!! Please choose again, Enter to continue");
+          scanner.nextLine();
+        deleteServices();
+      }
+    } while (true);
   }
 
 

@@ -7,14 +7,14 @@ import Models.House;
 import java.util.*;
 
 public class HouseManager {
-  public static final String FILE_HOUSE="D:\\Codegym\\A1020I1_TranThiQuynhNhi\\Module02\\Case Study\\FuramaResort\\src\\Data\\House.csv";
-  public static final String COMMA= " , ";
+  public static final String FILE_HOUSE = "D:\\Codegym\\A1020I1_TranThiQuynhNhi\\Module02\\Case Study\\FuramaResort\\src\\Data\\House.csv";
+  public static final String COMMA = " , ";
 
 
   public static void addNewHouse() {
 
     Scanner scanner = new Scanner(System.in);
-    Validate validate=new Validate();
+    Validate validate = new Validate();
 
     System.out.print("Nhap ID House: ");
     String idHouse = validate.inputID();
@@ -41,32 +41,32 @@ public class HouseManager {
     String describeConvenient = scanner.nextLine();
 
     System.out.print("Nhap so tang: ");
-    String numberOfFloorsHouse =validate.inputNumberOfFloor();
+    String numberOfFloorsHouse = validate.inputNumberOfFloor();
 
-    House house=new House(idHouse,nameHouse,areaUseHouse,
-            rentPriceHouse,maxNumberOfPeople,typeRentHouse,
-            standardRoomHouse,describeConvenient,numberOfFloorsHouse);
+    House house = new House(idHouse, nameHouse, areaUseHouse,
+            rentPriceHouse, maxNumberOfPeople, typeRentHouse,
+            standardRoomHouse, describeConvenient, numberOfFloorsHouse);
 
 
-    String lineHouse=house.getId()+COMMA+house.getNameServices()+COMMA
-            +house.getAreaUse()+COMMA+house.getRentPrice()+COMMA
-            +house.getMaxNumberOfPeople()+COMMA +house.getRentalType()+COMMA
-            +house.getStandardRoom()+COMMA+house.getDescribeConvenient()+COMMA
-            +house.getNumberOfFloors();
-    FileUtils.writeFile(FILE_HOUSE,lineHouse);
+    String lineHouse = house.getId() + COMMA + house.getNameServices() + COMMA
+            + house.getAreaUse() + COMMA + house.getRentPrice() + COMMA
+            + house.getMaxNumberOfPeople() + COMMA + house.getRentalType() + COMMA
+            + house.getStandardRoom() + COMMA + house.getDescribeConvenient() + COMMA
+            + house.getNumberOfFloors();
+    FileUtils.writeFile(FILE_HOUSE, lineHouse);
   }
 
-  public static void showHouse(){
-    List<House> listHouse=FileUtils.CSVToListHouse();
+  public static void showHouse() {
+    List<House> listHouse = FileUtils.CSVToListHouse();
     for (House house : listHouse) {
       house.showInfo();
     }
   }
 
-  public static void showNameHouseNotDup(){
-    Set<String> nameHouseNotDup=new TreeSet<>();
-    List<House> houseList=new ArrayList<>();
-    houseList=FileUtils.CSVToListHouse();
+  public static void showNameHouseNotDup() {
+    Set<String> nameHouseNotDup = new TreeSet<>();
+    List<House> houseList = new ArrayList<>();
+    houseList = FileUtils.CSVToListHouse();
     for (int i = 0; i < houseList.size(); i++) {
       nameHouseNotDup.add(houseList.get(i).getNameServices());
     }
@@ -75,5 +75,32 @@ public class HouseManager {
       System.out.println(s);
 
     }
+  }
+
+  public static House searchHouse() {
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("Nhap id muon tim kiem: ");
+    String id = scanner.nextLine();
+    List<House> listHouse = new ArrayList<>();
+    listHouse = FileUtils.CSVToListHouse();
+    for (House house : listHouse) {
+      if (id.equals(house.getId())) {
+        return house;
+      }
+    }
+    return null;
+  }
+
+  public static void deleteHouse(){
+    Scanner scanner=new Scanner(System.in);
+    System.out.print("Nhap id ban muon xoa: ");
+    String id=scanner.nextLine();
+    List<House> list=new ArrayList<>();
+    list=FileUtils.CSVToListHouse();
+
+    for (House house : list) {
+      list.remove(house);
+    }
+    System.out.println("Xoa thanh cong ");
   }
 }

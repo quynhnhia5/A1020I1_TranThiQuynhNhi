@@ -21,7 +21,9 @@ public class MainController {
               "4." + "Show Information of Customer\n" +
               "5." + "Add New Booking\n" +
               "6." + "Show Information of Employee\n" +
-              "7." + "Exit");
+              "7." + "Search Services\n" +
+              "8." +"Delete Services\n"+
+              "9." + "Exit");
       System.out.print("Vui long chon chuc nang ban muon thuc hien: ");
       int choice = scanner.nextInt();
       switch (choice) {
@@ -42,6 +44,12 @@ public class MainController {
           break;
         case 6:
           EmployManager.showEmp();
+          break;
+        case 7:
+ServicesManager.search();
+          break;
+        case 8:
+ServicesManager.deleteServices();
           break;
         default:
           return;

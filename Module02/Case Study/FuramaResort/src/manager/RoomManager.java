@@ -3,6 +3,7 @@ package manager;
 import Commons.FileUtils;
 import Commons.Validate;
 import Models.Room;
+import com.sun.org.apache.bcel.internal.generic.AllocationInstruction;
 
 import javax.swing.*;
 import java.util.*;
@@ -70,6 +71,35 @@ public class RoomManager {
     for (String s : nameRoomNotDup) {
       System.out.println(s);
     }
+  }
+
+  public static Room searchRoom() {
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("Nhap id muon tim kiem: ");
+    String id = scanner.nextLine();
+
+    List<Room> listRoom = new ArrayList<>();
+    listRoom = FileUtils.CSVToListRoom();
+    for (Room room : listRoom) {
+      if (id.equals(room.getId())) {
+        return room;
+      }
+    }
+    return null;
+  }
+
+  public static Room deleteRoom() {
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("Nhap id ban muon xoa: ");
+    String id = scanner.nextLine();
+
+    List<Room> list = new ArrayList<>();
+    list = FileUtils.CSVToListRoom();
+
+    for (Room room : list) {
+      return room;
+    }
+    return null;
   }
 
 }

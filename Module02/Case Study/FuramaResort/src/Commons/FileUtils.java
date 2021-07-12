@@ -19,7 +19,42 @@ public class FileUtils {
 
   public static void writeFile(String pathFile, String line) {
     try {
-      FileWriter fileWriter = new FileWriter(pathFile, true);
+      FileWriter fileWriter = new FileWriter(pathFile, true); //true là ghi nối vào cuối file, //false là ghi đè
+      BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+      List<String> str = readFile(pathFile);
+      if (str.isEmpty()) {
+
+        switch (pathFile) {
+          case "D:\\Codegym\\A1020I1_TranThiQuynhNhi\\Module02\\Case Study\\FuramaResort\\src\\Data\\Villa.csv":
+            bufferedWriter.write(LINE_VILLA);
+            break;
+          case "D:\\Codegym\\A1020I1_TranThiQuynhNhi\\Module02\\Case Study\\FuramaResort\\src\\Data\\House.csv":
+            bufferedWriter.write(LINE_HOUSE);
+            break;
+          case "D:\\Codegym\\A1020I1_TranThiQuynhNhi\\Module02\\Case Study\\FuramaResort\\src\\Data\\Room.csv":
+            bufferedWriter.write(LINE_ROOM);
+            break;
+          case "D:\\Codegym\\A1020I1_TranThiQuynhNhi\\Module02\\Case Study\\FuramaResort\\src\\Data\\Customer.csv":
+            bufferedWriter.write(LINE_CUSTOMER);
+            break;
+          default:
+            bufferedWriter.write(LINE_BOOKING);
+            break;
+        }
+      }
+
+      bufferedWriter.write(line);
+      bufferedWriter.newLine();
+      bufferedWriter.close();
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+  }
+
+
+  public static void overwriteFile(String pathFile, String line) {
+    try {
+      FileWriter fileWriter = new FileWriter(pathFile, false); //true là ghi nối vào cuối file, //false là ghi đè
       BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
       List<String> str = readFile(pathFile);
       if (str.isEmpty()) {
