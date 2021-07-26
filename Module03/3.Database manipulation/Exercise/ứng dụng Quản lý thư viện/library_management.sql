@@ -49,6 +49,11 @@ returnDate date not null,
 foreign key (student_number) references Students(student_number),
 foreign key (idBook) references Book(idBook)
 );
+alter table BorrowOrder
+add  id int (15) not null,
+add PRIMARY KEY(id);
+
+
 
 
 
