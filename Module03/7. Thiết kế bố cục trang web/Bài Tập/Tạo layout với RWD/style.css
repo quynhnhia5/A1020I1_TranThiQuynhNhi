@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+}
+[class*="col-"]{
+    float: left;
+}
+body{
+    min-width: 64em;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+.header{
+    height: 3.2em;
+    background-color: black;
+    color: white;
+
+}
+.header div{
+    font-size: 16px;
+    line-height: 3.2em;
+}
+.header  .nav-right{
+    text-align: right;
+    padding-right: 1em;
+}
+
+.container .left{
+    background-color: #f1f1f1;
+    min-height: 450px;
+}
+.container .left ul{
+    margin: 0;
+    padding: 0;
+}
+.container .left ul li{
+    list-style: none;
+    text-align: center;
+    padding: 1em 0;
+
+}
+.container .left ul li a{
+    text-decoration: none;
+}
+.container .content{
+    background-color:#ffffff ;
+    padding: 1em;
+    min-height: 450px;
+}
+.container .right{
+   background-color: #f1f1f1;
+   min-height: 450px;
+  
+}
+.container .right div{
+    padding: 3.2em 5em;
+}
+
+.footer{
+    background-color:#555555 ;
+    color:#ffffff ;
+    height: 3.2em;
+    line-height: 3.2em;
+    text-align: center;
+}
+
+@media screen and (max-width: 46.1875em) {
+    body{
+        max-width: 56.1875em;
+    }
+    
+    .header  .nav-right{
+        text-align: left;
+    }
+    .container .col-{
+        width: 100%;
+       height: 10em;
+    
+    }
+    .container .content{
+       width: 100%;
+       height: 10em;
+    }
+
+
+
+    
+}
+@media screen and (min-width: 46.25em) and (max-width:63.9375em)    {
+    body{
+        max-width: 63.9375em;   
+    }
+    .header  .nav-right{
+        text-align: left;
+        padding-left: 13em;
+    }
+
+
+
+}
+
+
+
+
+

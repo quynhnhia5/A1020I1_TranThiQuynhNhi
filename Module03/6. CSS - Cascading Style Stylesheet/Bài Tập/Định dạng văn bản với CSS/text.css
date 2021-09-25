@@ -1,0 +1,17 @@
+* {
+  font-size: 18px;
+  font-family: sans-serif;
+  text-align: justify;
+}
+#heading {
+  font-size: 35px;
+}
+#color-deepskyblue {
+  color: deepskyblue;
+}
+.color-blue {
+  color: blue;
+}
+p {
+  text-indent: 50px;
+}
