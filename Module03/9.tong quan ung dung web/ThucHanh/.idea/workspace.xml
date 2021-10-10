@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9f296031-ce05-4bac-b1bc-4b7253ed5f0f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../Module02/3. Array and Method/examplebai1/JavaEEWebApp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module02/3. Array and Method/examplebai1/examplebai1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module02/3. Array and Method/examplebai2/examplebai2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module01/bai15_ham2/bai_tap/ung_dung_quan_ly_san_pham.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module01/bai15_ham2/bai_tap/ung_dung_quan_ly_san_pham.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module02/3. Array and Method/examplebai1/web/WEB-INF/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module02/3. Array and Method/examplebai1/web/WEB-INF/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module02/Case Study/FuramaResort/src/Commons/FileUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module02/Case Study/FuramaResort/src/Commons/Validate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module02/Case Study/FuramaResort/src/Commons/check/CheckCustomer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module02/Case Study/FuramaResort/src/Commons/check/CheckEmployee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module02/Case Study/FuramaResort/src/Commons/check/CheckService.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1z2dd6kd6Cg4cKxRTC99Cl4hpoY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9f296031-ce05-4bac-b1bc-4b7253ed5f0f" name="Default Changelist" comment="" />
+      <created>1633350200464</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1633350200464</updated>
+      <workItem from="1633350204893" duration="109000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="91" y="0" key="new project wizard" timestamp="1633350312852">
+      <screen x="0" y="0" width="1280" height="661" />
+    </state>
+    <state x="91" y="0" key="new project wizard/0.0.1280.661@0.0.1280.661" timestamp="1633350312852" />
+  </component>
+</project>
