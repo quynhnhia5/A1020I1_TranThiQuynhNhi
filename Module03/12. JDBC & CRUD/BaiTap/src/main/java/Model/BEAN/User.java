@@ -16,6 +16,12 @@ public class User {
     this.country = country;
   }
 
+  public User(int id, String name, String email) {
+    this.id = id;
+    this.name = name;
+    this.email = email;
+  }
+
   public User(String name, String email, String country) {
     this.name = name;
     this.email = email;

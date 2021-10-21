@@ -15,7 +15,7 @@
 </head>
 <body>
 <div class="container">
-<%--    <form action="/user?action=search" method="post">--%>
+    <form action="/user?action=search" method="post">
     <a href="" class="btn btn-success">Trở về Trang chủ</a>
 
     <table id="user" class="table table-striped">
@@ -30,12 +30,12 @@
         </tr>
         </thead>
         <tbody>
-        <c:forEach var="user" items="${UserCountryList}">
+        <c:forEach var="list" items="${UserCountryList}">
             <tr>
-                <td> ${user.id}</td>
-                <td> ${user.name}</td>
-                <td> ${user.email}</td>
-                <td> ${user.country}</td>
+                <td> ${list.id}</td>
+                <td> ${list.name}</td>
+                <td> ${list.email}</td>
+                <td> ${list.country}</td>
                 <td> <a href="/user?action=delete&id=${user.id}">Delete</a></td>
                 <td> <a href="/user?action=edit&id=${user.id}">Edit</a></td>
 
@@ -43,7 +43,7 @@
         </c:forEach>
         </tbody>
     </table>
-<%--    </form>--%>
+    </form>
 
 </div>
 <script src="/assert/jquery/jquery-3.5.1.min.js"></script>

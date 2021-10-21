@@ -38,8 +38,8 @@ public class UserServiceImpl implements UserService {
   }
 
   @Override
-  public List<User> searchCountry(String country) throws SQLException {
-    return userRepository.searchCountry(country);
+  public User searchCountry(String countrySearch) throws SQLException {
+    return userRepository.searchCountry(countrySearch);
   }
 
 //  @Override

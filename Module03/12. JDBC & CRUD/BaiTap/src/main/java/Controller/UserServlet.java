@@ -107,8 +107,8 @@ public class UserServlet extends HttpServlet {
   }
 
   private void searchCountry(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, SQLException {
-    String countrySearch=request.getParameter("country");
-    List<User> UserCountryList = userService.searchCountry(countrySearch);
+    String countrySearch=request.getParameter("countrySearch");
+    User UserCountryList = userService.searchCountry(countrySearch);
     request.setAttribute("UserCountryList",UserCountryList);
     request.getRequestDispatcher("user/search.jsp").forward(request,response);
   }

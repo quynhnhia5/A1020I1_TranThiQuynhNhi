@@ -14,7 +14,7 @@ public interface UserRepository {
   User selectById(int id) throws SQLException;
 
   void updateUser(User user) throws SQLException;
-  List<User> searchCountry(String country) throws SQLException;
+  User searchCountry(String countrySearch) throws SQLException;
 //  User findByCountry(String country);
 
 }

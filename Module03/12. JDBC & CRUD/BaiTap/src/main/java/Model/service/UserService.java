@@ -11,7 +11,7 @@ public interface UserService {
   void  delete(int id) throws SQLException;
   void update(User user) throws SQLException;
   User selectById(int id) throws SQLException;
-  List<User> searchCountry(String country) throws SQLException;
+  User searchCountry(String countrySearch) throws SQLException;
 ////  User findByCountry(String country);
 
 }
