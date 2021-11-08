@@ -33,8 +33,9 @@ public class UserRepositoryImpl implements UserRepository {
       list.add(user);
 
     }
-    conn.close();
     ptmt.close();
+    rs.close();
+
     return list;
 
 
@@ -53,8 +54,8 @@ public class UserRepositoryImpl implements UserRepository {
     ptmt.setString(2,email);
     ptmt.setString(3,country);
     ptmt.executeUpdate();
-    conn.close();
     ptmt.close();
+
   }
 
   @Override
@@ -64,8 +65,8 @@ public class UserRepositoryImpl implements UserRepository {
     PreparedStatement ptmt=conn.prepareStatement(sql);
     ptmt.setInt(1, id);
     ptmt.executeUpdate();
-    conn.close();
     ptmt.close();
+
 
   }
 
@@ -96,10 +97,11 @@ public class UserRepositoryImpl implements UserRepository {
       String name=rs.getString("name");
       String email = rs.getString("email");
       String country=rs.getString("country");
-      user=new User(name,email,country);
+      user=new User(id,name,email,country);
     }
-    conn.close();
     ptmt.close();
+    rs.close();
+
 
     return user;
 
@@ -116,28 +118,54 @@ public class UserRepositoryImpl implements UserRepository {
     ptmt.setString(3,user.getCountry());
     ptmt.setInt(4,user.getId());
     ptmt.executeUpdate();
-    conn.close();
     ptmt.close();
+
   }
 
   @Override
-  public User searchCountry(String countrySearch) throws SQLException {
+  public List<User> searchCountry(String countrySearch) throws SQLException {
 
-    User user=null;
+//    User user=null;
+//    Connection conn=DBConnection.CreateConnection();
+//    String sql="SELECT * FROM demo.users WHERE country=?;";
+//    PreparedStatement ptmt=conn.prepareStatement(sql);
+//    ptmt.setString(1,countrySearch);
+//    ResultSet rs=ptmt.executeQuery();
+//    while (rs.next()){
+//      int id=rs.getInt("id");
+//      String name=rs.getString("name");
+//      String email = rs.getString("email");
+//      user=new User(id,name,email,countrySearch);
+//    }
+//
+//
+//    ptmt.close();
+//    rs.close();
+//    return user;
+
     Connection conn=DBConnection.CreateConnection();
-    String sql="select id,name,email,country from demo.users where (`country` = ?);";
+    List<User> list=new ArrayList<>();
+    String sql="SELECT * FROM demo.users WHERE country=?;";
     PreparedStatement ptmt=conn.prepareStatement(sql);
     ptmt.setString(1,countrySearch);
     ResultSet rs=ptmt.executeQuery();
     while (rs.next()){
       int id=rs.getInt("id");
       String name=rs.getString("name");
-      String email = rs.getString("email");
+      String email=rs.getString("email");
       String country=rs.getString("country");
-      user=new User(id,name,email,country);
-    }
+      User user=new User();
+      user.setId(id);
+      user.setName(name);
+      user.setEmail(email);
+      user.setCountry(country);
+      list.add(user);
 
-    return user;
+    }
+    ptmt.close();
+    rs.close();
+
+    return list;
 //    Connection conn=DBConnection.CreateConnection();
 //    List<User> UserCountryList=new ArrayList<>();
 //    String sql="SELECT id,name,email,country FROM users WHERE country=?;";

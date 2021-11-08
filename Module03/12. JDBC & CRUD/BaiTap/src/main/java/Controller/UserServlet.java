@@ -48,7 +48,7 @@ public class UserServlet extends HttpServlet {
     String email = request.getParameter("email");
     String count = request.getParameter("country");
     User user = new User(id, name, email, count);
-    userService.update(user);
+    userService.updateUser(user);
     showListUser(request,response);
 //    RequestDispatcher dispatcher = request.getRequestDispatcher("user/edit.jsp");
 //    dispatcher.forward(request, response);
@@ -56,11 +56,11 @@ public class UserServlet extends HttpServlet {
   }
 
   private void createUser(HttpServletRequest request, HttpServletResponse response) throws ServletException, SQLException, IOException {
-    int id = Integer.parseInt(request.getParameter("id"));
+//    int id = Integer.parseInt(request.getParameter("id"));
     String name = request.getParameter("name");
     String email = request.getParameter("email");
     String count = request.getParameter("country");
-    User user = new User(id, name, email, count);
+    User user = new User( name, email, count);
     userService.create(user);
     showListUser(request, response);
 
@@ -72,9 +72,9 @@ public class UserServlet extends HttpServlet {
       action = "";
     }
     switch (action) {
-      case "create":
-        showFormCreate(request, response);
-        break;
+        case "create":
+          showFormCreate(request, response);
+          break;
       case "delete":
         try {
           deleteUser(request,response);
@@ -108,8 +108,8 @@ public class UserServlet extends HttpServlet {
 
   private void searchCountry(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, SQLException {
     String countrySearch=request.getParameter("countrySearch");
-    User UserCountryList = userService.searchCountry(countrySearch);
-    request.setAttribute("UserCountryList",UserCountryList);
+    List<User> user = userService.searchCountry(countrySearch);
+    request.setAttribute("user",user);
     request.getRequestDispatcher("user/search.jsp").forward(request,response);
   }
 
@@ -135,6 +135,6 @@ public class UserServlet extends HttpServlet {
   }
 
   private void showFormCreate(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    request.getRequestDispatcher("user/create.jsp").forward(request, response);
+    request.getRequestDispatcher("/create.jsp").forward(request, response);
   }
 }

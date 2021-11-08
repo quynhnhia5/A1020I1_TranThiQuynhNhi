@@ -28,7 +28,7 @@ public class UserServiceImpl implements UserService {
   }
 
   @Override
-  public void update(User user) throws SQLException {
+  public void updateUser(User user) throws SQLException {
     userRepository.updateUser(user);
   }
 
@@ -38,7 +38,7 @@ public class UserServiceImpl implements UserService {
   }
 
   @Override
-  public User searchCountry(String countrySearch) throws SQLException {
+  public  List<User> searchCountry(String countrySearch) throws SQLException {
     return userRepository.searchCountry(countrySearch);
   }
 

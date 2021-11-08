@@ -16,10 +16,6 @@
 <div class="container">
     <form action="/user?action=create" method="post">
         <div class="form-group">
-            <label for="id">Mã Người dùng</label>
-            <input type="text" class="form-control" id="id" name="id">
-        </div>
-        <div class="form-group">
             <label for="name">Tên Người Dùng</label>
             <input type="text" class="form-control" id="name" name="name">
         </div>

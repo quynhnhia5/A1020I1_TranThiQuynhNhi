@@ -17,8 +17,12 @@
 <div class="container">
 
     <a href="/user?action=create" class="btn btn-success">Thêm mới</a>
-    <input type="text" class="bg-light" placeholder="Tìm kiếm" style="margin-left: 700px" name="countrySearch">
-    <a href="/user?action=search" class="btn btn-success">Search</a>
+
+
+        <input type="text" class="bg-light" placeholder="Tìm kiếm" style="margin-left: 700px" name="countrySearch" >
+       <input type="submit" value="search" formaction="/user?action=search">
+
+
 
     <h3><%= request.getAttribute("msgDelete")!=null?request.getAttribute("msgDelete"):"" %></h3>
 
