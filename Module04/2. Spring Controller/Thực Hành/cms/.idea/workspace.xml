@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="472db188-9b5d-4ce3-bc35-cbcb4b2d8af0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/currency conversion/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/currency conversion/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/currency conversion/.gradle/5.2.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/currency conversion/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/currency conversion/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/currency conversion/.gradle/5.2.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/currency conversion/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/currency conversion/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/currency conversion/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/currency conversion/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/currency conversion/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/currency conversion/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/currency conversion/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/currency conversion/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/currency conversion/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/currency conversion/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/currency conversion/build/classes/java/main/a03/config/AppConfiguration.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/currency conversion/build/classes/java/main/a03/config/AppInitializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/currency conversion/build/classes/java/main/a03/controller/ConversionController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/currency conversion/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/currency conversion/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/currency conversion/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/currency conversion/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/currency conversion/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/currency conversion/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/currency conversion/src/main/java/a03/config/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/currency conversion/src/main/java/a03/config/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/currency conversion/src/main/java/a03/controller/ConversionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/currency conversion/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/currency conversion/src/main/webapp/WEB-INF/views/result.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/dictionary/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/dictionary/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/dictionary/.gradle/5.2.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/dictionary/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/dictionary/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/dictionary/.gradle/5.2.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/dictionary/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/dictionary/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/dictionary/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/dictionary/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/dictionary/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/dictionary/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/dictionary/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/dictionary/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/dictionary/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/dictionary/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/dictionary/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/dictionary/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/dictionary/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/dictionary/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/dictionary/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/dictionary/src/main/java/a03/config/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/dictionary/src/main/java/a03/config/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/dictionary/src/main/java/a03/controller/DictionaryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Bài Tập/dictionary/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/Spring Greeting/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/Spring Greeting/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/Spring Greeting/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/Spring Greeting/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/Spring Greeting/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/Spring Greeting/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/Spring Greeting/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/Spring Greeting/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/Spring Greeting/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/Spring Greeting/src/main/java/A03/controller/GreetingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/Spring Greeting/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/Spring Greeting/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/Spring Greeting/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/Spring Greeting/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/customer management/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/customer management/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/customer management/.gradle/5.2.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/customer management/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/customer management/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/customer management/.gradle/5.2.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/customer management/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/customer management/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/customer management/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/customer management/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/customer management/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/customer management/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/customer management/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/customer management/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/customer management/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/customer management/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/customer management/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/customer management/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/customer management/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/customer management/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/customer management/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/customer management/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/customer management/src/main/java/a03/config/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/customer management/src/main/java/a03/config/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/customer management/src/main/java/a03/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/customer management/src/main/webapp/customers/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../1.Spring MVC/Thực Hành/customer management/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/cg/wbd/grandemonstration/config/AppConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/cg/wbd/grandemonstration/config/AppInitializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/cg/wbd/grandemonstration/controller/CustomerController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/cg/wbd/grandemonstration/model/Customer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/cg/wbd/grandemonstration/service/CustomerService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/cg/wbd/grandemonstration/service/CustomerServiceFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/cg/wbd/grandemonstration/service/impl/SimpleCustomerServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/libs/Gran Demonstration-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cg/wbd/grandemonstration/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cg/wbd/grandemonstration/config/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cg/wbd/grandemonstration/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cg/wbd/grandemonstration/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cg/wbd/grandemonstration/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cg/wbd/grandemonstration/service/CustomerServiceFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cg/wbd/grandemonstration/service/impl/SimpleCustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/app-conf.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/customers/info.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/customers/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../email/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../email/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../email/.gradle/5.2.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../email/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../email/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../email/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../email/.gradle/5.2.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../email/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../email/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../email/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../email/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../email/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../email/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../email/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../email/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../email/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../email/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../email/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../email/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../email/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../email/build/classes/java/main/a03/config/AppConfiguration.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../email/build/classes/java/main/a03/config/AppInitializer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../email/build/classes/java/main/a03/controller/EmailController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../email/build/libs/email-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../email/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../email/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../email/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../email/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../email/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../email/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../email/src/main/java/a03/config/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../email/src/main/java/a03/config/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../email/src/main/java/a03/controller/EmailController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../email/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../email/src/main/webapp/WEB-INF/views/success.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../timezone/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../timezone/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../timezone/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../timezone/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../timezone/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../timezone/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../timezone/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../timezone/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../timezone/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../timezone/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../timezone/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../timezone/src/main/java/a03/config/AppConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../timezone/src/main/java/a03/config/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../timezone/src/main/java/a03/controller/TimeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../timezone/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Module03/module/module/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Module03/module/module/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Module03/module/module/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Module03/module/module/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Module03/module/module/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Module03/module/module/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Module03/module/module/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Module03/module/module/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Module03/module/module/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Module03/module/module/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Module03/module/module/src/main/webapp/benhnhan/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Module03/module/module/src/main/webapp/benhnhan/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../New Microsoft Word Document.docx" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="20xNUkKkPma5MvI0gT8yfX2pvp0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/cg/wbd/grandemonstration" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Codegym\A1020I1_TranThiQuynhNhi\Module04\2. Spring Controller\Thực Hành\cms\src\main\java\cg\wbd\grandemonstration" />
+      <recent name="D:\Codegym\A1020I1_TranThiQuynhNhi\Module04\2. Spring Controller\Thực Hành\cms" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat-8.5.70" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat-8.5.70" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="Gradle : cg.wbd : Gran Demonstration-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_cms" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="55391" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : cg.wbd : Gran Demonstration-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="472db188-9b5d-4ce3-bc35-cbcb4b2d8af0" name="Default Changelist" comment="" />
+      <created>1636982296761</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636982296761</updated>
+      <workItem from="1636982299548" duration="1321000" />
+      <workItem from="1637147584708" duration="1335000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="233" y="0" key="#Project_Structure" timestamp="1636982537502">
+      <screen x="0" y="0" width="1280" height="661" />
+    </state>
+    <state x="233" y="0" key="#Project_Structure/0.0.1280.661@0.0.1280.661" timestamp="1636982537502" />
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1637148795062">
+      <screen x="0" y="0" width="1280" height="661" />
+    </state>
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.661@0.0.1280.661" timestamp="1637148795062" />
+    <state x="371" y="79" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1637148588405">
+      <screen x="0" y="0" width="1280" height="661" />
+    </state>
+    <state x="371" y="79" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.661@0.0.1280.661" timestamp="1637148588405" />
+    <state x="421" y="87" key="FileChooserDialogImpl" timestamp="1637148917246">
+      <screen x="0" y="0" width="1280" height="661" />
+    </state>
+    <state x="421" y="87" key="FileChooserDialogImpl/0.0.1280.661@0.0.1280.661" timestamp="1637148917246" />
+    <state width="845" height="404" key="GridCell.Tab.0.bottom" timestamp="1637148932660">
+      <screen x="0" y="0" width="1280" height="661" />
+    </state>
+    <state width="845" height="404" key="GridCell.Tab.0.bottom/0.0.1280.661@0.0.1280.661" timestamp="1637148932660" />
+    <state width="845" height="404" key="GridCell.Tab.0.center" timestamp="1637148932660">
+      <screen x="0" y="0" width="1280" height="661" />
+    </state>
+    <state width="845" height="404" key="GridCell.Tab.0.center/0.0.1280.661@0.0.1280.661" timestamp="1637148932660" />
+    <state width="845" height="404" key="GridCell.Tab.0.left" timestamp="1637148932660">
+      <screen x="0" y="0" width="1280" height="661" />
+    </state>
+    <state width="845" height="404" key="GridCell.Tab.0.left/0.0.1280.661@0.0.1280.661" timestamp="1637148932660" />
+    <state width="845" height="404" key="GridCell.Tab.0.right" timestamp="1637148932660">
+      <screen x="0" y="0" width="1280" height="661" />
+    </state>
+    <state width="845" height="404" key="GridCell.Tab.0.right/0.0.1280.661@0.0.1280.661" timestamp="1637148932660" />
+    <state width="845" height="404" key="GridCell.Tab.1.bottom" timestamp="1637148932660">
+      <screen x="0" y="0" width="1280" height="661" />
+    </state>
+    <state width="845" height="404" key="GridCell.Tab.1.bottom/0.0.1280.661@0.0.1280.661" timestamp="1637148932660" />
+    <state width="845" height="404" key="GridCell.Tab.1.center" timestamp="1637148932660">
+      <screen x="0" y="0" width="1280" height="661" />
+    </state>
+    <state width="845" height="404" key="GridCell.Tab.1.center/0.0.1280.661@0.0.1280.661" timestamp="1637148932660" />
+    <state width="845" height="404" key="GridCell.Tab.1.left" timestamp="1637148932660">
+      <screen x="0" y="0" width="1280" height="661" />
+    </state>
+    <state width="845" height="404" key="GridCell.Tab.1.left/0.0.1280.661@0.0.1280.661" timestamp="1637148932660" />
+    <state width="845" height="404" key="GridCell.Tab.1.right" timestamp="1637148932660">
+      <screen x="0" y="0" width="1280" height="661" />
+    </state>
+    <state width="845" height="404" key="GridCell.Tab.1.right/0.0.1280.661@0.0.1280.661" timestamp="1637148932660" />
+    <state width="845" height="404" key="GridCell.Tab.2.bottom" timestamp="1637148932661">
+      <screen x="0" y="0" width="1280" height="661" />
+    </state>
+    <state width="845" height="404" key="GridCell.Tab.2.bottom/0.0.1280.661@0.0.1280.661" timestamp="1637148932661" />
+    <state width="845" height="404" key="GridCell.Tab.2.center" timestamp="1637148932661">
+      <screen x="0" y="0" width="1280" height="661" />
+    </state>
+    <state width="845" height="404" key="GridCell.Tab.2.center/0.0.1280.661@0.0.1280.661" timestamp="1637148932661" />
+    <state width="845" height="404" key="GridCell.Tab.2.left" timestamp="1637148932660">
+      <screen x="0" y="0" width="1280" height="661" />
+    </state>
+    <state width="845" height="404" key="GridCell.Tab.2.left/0.0.1280.661@0.0.1280.661" timestamp="1637148932660" />
+    <state width="845" height="404" key="GridCell.Tab.2.right" timestamp="1637148932661">
+      <screen x="0" y="0" width="1280" height="661" />
+    </state>
+    <state width="845" height="404" key="GridCell.Tab.2.right/0.0.1280.661@0.0.1280.661" timestamp="1637148932661" />
+    <state x="91" y="0" key="new project wizard" timestamp="1637148929187">
+      <screen x="0" y="0" width="1280" height="661" />
+    </state>
+    <state x="91" y="0" key="new project wizard/0.0.1280.661@0.0.1280.661" timestamp="1637148929187" />
+  </component>
+</project>
