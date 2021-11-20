@@ -9,31 +9,22 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-    <title>The World Clock</title>
-    <style type="text/css">
-        select {
-            width: 200px;
-            height: 20px;
-        }
-    </style>
+    <title>calculator</title>
+
 </head>
 <body>
-<h2>Current Local Times Around the World</h2>
-<span>Current time in ${city}: <strong>${date}</strong></span>
-<form id="locale" action="worldclock" method="get">
-    <select name="city" onchange="document.getElementById('locale').submit()">
-        <option value="Asia/Ho_Chi_Minh">Select a city</option>
-        <option value="Asia/Ho_Chi_Minh" selected>Ho Chi Minh</option>
-        <option value="Singapore">Singapore</option>
-        <option value="Asia/Hong_Kong">Hong Kong</option>
-        <option value="Asia/Tokyo">Tokyo</option>
-        <option value="Asia/Seoul">Seoul</option>
-        <option value="Europe/London">London</option>
-        <option value="Europe/Madrid">Madrid</option>
-        <option value="America/New_York">New York</option>
-        <option value="Australia/Sydney">Sydney</option>
-        <option value="Argentina/Buenos_Aires">Buenos Aires</option>
-    </select>
+<form action="/calculator" method="post">
+    <h3>Simple Calculator</h3>
+    First operand: <input type="text" name="num1"><br><br>
+    Operator: <select name="btnHandle">
+    <option value="+" >Addition</option>
+    <option value="-" >Subtraction</option>
+    <option value="*" >Multiple</option>
+    <option value="/">Divide</option>
+</select><br><br>
+    Second operand: <input type="text" name="num2"><br><br>
+    <button >Calculate</button>
+    <%--  <input type="submit" value="Calculate">--%>
 </form>
 </body>
 </html>
